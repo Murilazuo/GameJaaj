@@ -25,9 +25,15 @@ public class MoveSkate : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float rotationSpeedMod = (((speed / maxSpeed) -1f) * -1f) + 0.2f;
-        
-        
+        float rotationSpeedMod = 0;
+        if(speed > maxSpeed / 2)
+        {
+            rotationSpeedMod = (((speed / maxSpeed) - 1f) * -1f) + 0.2f;
+        }
+        else{
+            rotationSpeedMod = ((speed / maxSpeed));
+        }
+        rotationSpeedMod = Mathf.Clamp01(rotationSpeedMod);
 
         if (Input.GetKey(KeyCode.D))
         {
@@ -38,11 +44,15 @@ public class MoveSkate : MonoBehaviour
         }
 
 
-
         if (Input.GetKey(KeyCode.W))
         {
             speed += accereration;
-        }else if (speed > 0)
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            speed -= accereration;
+        }
+        else if (speed > 0)
         {
             speed -= deaccereration;
         }
