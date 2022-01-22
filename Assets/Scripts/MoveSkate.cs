@@ -25,13 +25,16 @@ public class MoveSkate : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float rotationSpeedMod = (((speed / maxSpeed) -1f) * -1f) + 0.2f;
+        
+        
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(new Vector3(0,0,-rotationForce));
+            transform.Rotate(new Vector3(0,0,-rotationForce * rotationSpeedMod));
         }else if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(new Vector3(0, 0,rotationForce));
+            transform.Rotate(new Vector3(0, 0,rotationForce * rotationSpeedMod));
         }
 
 

@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8761c55d09bc04d4fb5a23aebccaf84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accereration: 0.2
+  accereration: 0.3
   deaccereration: 0.2
   rotationForce: 5
   maxSpeed: 20
