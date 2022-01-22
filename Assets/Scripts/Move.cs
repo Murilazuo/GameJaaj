@@ -7,7 +7,7 @@ public class Move : MonoBehaviour
     [SerializeField] private float acceleration = 0.3f;
     [SerializeField] private float deacceleration = 0.1f;
 
-
+    bool jump = false;
     float speedX, speedY;
     void Start()
     {
@@ -16,7 +16,7 @@ public class Move : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !jump)
         {
             Jump();
         }
@@ -64,7 +64,12 @@ public class Move : MonoBehaviour
 
     void Jump()
     {
+        jump = true;
         anim.SetTrigger("Jump");
+    }
+    void EndJump()
+    {
+        jump = false;
     }
 
 }

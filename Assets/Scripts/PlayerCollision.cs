@@ -7,12 +7,12 @@ public class PlayerCollision : MonoBehaviour
     {
          playerManager = GetComponent<PlayerManager>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         switch (collision.tag)
         {
             case "Antibiotic":
-                playerManager.TakeHit(1);
+                playerManager.TakeHit(0.1f);
                 break;
         }
     }
