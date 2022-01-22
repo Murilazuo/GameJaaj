@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour
 {
     Rigidbody2D rig;
+    Animator anim;
     [SerializeField] private float acceleration = 0.3f;
     [SerializeField] private float deacceleration = 0.1f;
 
@@ -13,20 +12,32 @@ public class Move : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
     }
     private void FixedUpdate()
     {
 
-        if (Input.GetKey(KeyCode.W)){
+
+        if (Input.GetKey(KeyCode.W))
+        {
             speedY += acceleration;
-        }else if (Input.GetKey(KeyCode.S))
+        }
+        else if (Input.GetKey(KeyCode.S))
         {
             speedY -= acceleration;
         }
-        else if(speedY > 0)
+        else if (speedY > 0)
         {
             speedY -= deacceleration;
-        }else if(speedY < 0)
+        }
+        else if (speedY < 0)
         {
             speedY += deacceleration;
         }
@@ -48,6 +59,12 @@ public class Move : MonoBehaviour
             speedX += deacceleration;
         }
 
-        rig.velocity = new Vector2(speedX,speedY);
+        rig.velocity = new Vector2(speedX, speedY);
     }
+
+    void Jump()
+    {
+        anim.SetTrigger("Jump");
+    }
+
 }
