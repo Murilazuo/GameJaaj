@@ -5,7 +5,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float life, maxLife, score = 0, points = 0, pointsToNextUpgrade;
 
 
-
+    private void Start()
+    {
+        life = maxLife;
+    }
     internal void TakeHit(float damage)
     {
         life -= damage;
