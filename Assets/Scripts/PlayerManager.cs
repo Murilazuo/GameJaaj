@@ -14,8 +14,8 @@ public class PlayerManager : MonoBehaviour
     {
         life = maxLife;
 
-        //lifeUi.SetBar(life,maxLife);
-        //pointsUi.SetBar(points, pointsToNextUpgrade);
+        lifeUi.SetBar(life,maxLife);
+        pointsUi.SetBar(points, pointsToNextUpgrade);
     }
     internal void TakeHit(float damage)
     {
@@ -24,16 +24,16 @@ public class PlayerManager : MonoBehaviour
         if(life <= 0)
         {
             life = 0;
-          //  lifeUi.SetBar(life, maxLife);
+            lifeUi.SetBar(life, maxLife);
 
             GameOver();
             return;
         }
 
-        //lifeUi.SetBar(life, maxLife);
+        lifeUi.SetBar(life, maxLife);
 
         points += damage;
-        //pointsUi.SetBar(points, pointsToNextUpgrade);
+        pointsUi.SetBar(points, pointsToNextUpgrade);
 
         if (points >= pointsToNextUpgrade)
         {
