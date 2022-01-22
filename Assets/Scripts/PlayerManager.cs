@@ -4,18 +4,18 @@ public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private float life, maxLife, score = 0, points = 0, pointsToNextUpgrade;
     public static PlayerManager instance;
+    [SerializeField] BarUi lifeUi, pointsUi;
 
-    LifeUi lifeUi;
     private void Awake()
     {
         instance = this;
     }
     private void Start()
     {
-        lifeUi = LifeUi.lifeUi;
         life = maxLife;
 
-        lifeUi.SetLifeBar(life,maxLife);
+        //lifeUi.SetBar(life,maxLife);
+        //pointsUi.SetBar(points, pointsToNextUpgrade);
     }
     internal void TakeHit(float damage)
     {
@@ -24,16 +24,18 @@ public class PlayerManager : MonoBehaviour
         if(life <= 0)
         {
             life = 0;
-            lifeUi.SetLifeBar(life, maxLife);
+          //  lifeUi.SetBar(life, maxLife);
 
             GameOver();
             return;
         }
-        lifeUi.SetLifeBar(life, maxLife);
 
-        points += damage; 
+        //lifeUi.SetBar(life, maxLife);
 
-        if(points >= pointsToNextUpgrade)
+        points += damage;
+        //pointsUi.SetBar(points, pointsToNextUpgrade);
+
+        if (points >= pointsToNextUpgrade)
         {
             Upgrade();
 
