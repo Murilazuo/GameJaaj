@@ -60,6 +60,9 @@ public class MoveSkate : MonoBehaviour
         if(speed > maxSpeed)
         {
             speed = maxSpeed;
+        }else if (speed < -(maxSpeed / 2))
+        {
+            speed = -(maxSpeed / 2);
         }
 
         rig.velocity = transform.up * speed;

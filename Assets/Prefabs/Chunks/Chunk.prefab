@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5069426801525589779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5069426801525589778}
+  - component: {fileID: 5069426801525589789}
+  m_Layer: 0
+  m_Name: Chunk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5069426801525589778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5069426801525589779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5069426801525589789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5069426801525589779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab47c83b9e1d694ab95728ce381957a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToSpawn: 25
+  chunksToSpawn:
+  - {fileID: 1933782295695109183, guid: 2c2e61e95d9ea414ba10a07806f56499, type: 3}
+  - {fileID: 1933782295695109183, guid: 7596d2d62559b49478409c0113765904, type: 3}
+  - {fileID: 962292307634490040, guid: 79bdea0f32bc5d247903a025c4e55c8d, type: 3}
+  - {fileID: 880903937699994722, guid: 2cc5441181f133a4182421af3867425c, type: 3}
+  - {fileID: 880903937699994722, guid: 133ee79c2bf3b204fa9f45a3e0e471ba, type: 3}
+  - {fileID: 880903937699994722, guid: c9be3eec4ae085a40bc221f033154a69, type: 3}
+  - {fileID: 1933782295695109183, guid: d2ada43743ad38746b509dd21192f4cc, type: 3}
+  - {fileID: 962292307634490040, guid: 2aa62f42c7892fa4a95d7e6fdd90337f, type: 3}
+  - {fileID: 880903937699994722, guid: f9805cb559637cd4c86fc8d0156ccd7b, type: 3}
+  - {fileID: 880903937699994722, guid: 07c1eaf1f51c9e64fb081811d70434be, type: 3}
+  - {fileID: 880903937699994722, guid: 40ade4feaf286ab40a06503369789f24, type: 3}
+  chunk: {fileID: 0}
+  playerTransform: {fileID: 0}

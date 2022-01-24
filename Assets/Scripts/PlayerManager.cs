@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private float life, maxLife, score = 0, points = 0, pointsToNextUpgrade;
@@ -9,13 +10,16 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        transform.position = new Vector2(Mathf.Round(transform.position.x / 20) * 20, 
+            Mathf.Round(transform.position.y / 20) * 20);
     }
     private void Start()
     {
         life = maxLife;
 
-        lifeUi.SetBar(life,maxLife);
-        pointsUi.SetBar(points, pointsToNextUpgrade);
+        //lifeUi.SetBar(life,maxLife);
+        //pointsUi.SetBar(points, pointsToNextUpgrade);
     }
     internal void TakeHit(float damage)
     {
