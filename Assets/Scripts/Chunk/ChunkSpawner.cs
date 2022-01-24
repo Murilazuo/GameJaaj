@@ -15,7 +15,7 @@ public class ChunkSpawner : MonoBehaviour
                 Vector3 positionToSpawn = new Vector2(x, y);
                 if(playerTransform.position != positionToSpawn)
                 {
-                    Instantiate(chunk, positionToSpawn,Quaternion.identity);
+                    Instantiate(chunk, positionToSpawn,Quaternion.identity,transform);
                 }
             }
         }

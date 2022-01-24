@@ -16,7 +16,7 @@ public class Chunk : MonoBehaviour
     }
     private void Update()
     {
-        if(Vector2.Distance(playerTransform.position,transform.position) < distanceToSpawn)
+        if(Vector2.Distance(playerTransform.position,GetCenter()) < distanceToSpawn)
         {
             if (!chunkSpawn)
             {
@@ -39,9 +39,14 @@ public class Chunk : MonoBehaviour
         chunk = Instantiate(chunksToSpawn[Random.Range(0, chunksToSpawn.Length - 1)], new Vector2( 
         transform.position.x-10,transform.position.y+10), Quaternion.identity, transform);
     }
+    Vector2 GetCenter()
+    {
+        return new Vector2(transform.position.x + 10, transform.position.y - 10);
+    }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position,distanceToSpawn);
+        Gizmos.DrawWireSphere(GetCenter(),distanceToSpawn);
+        Gizmos.DrawWireCube(GetCenter(), new Vector2(20, 20));
     }
 }

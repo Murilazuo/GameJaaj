@@ -12,7 +12,18 @@ public class PlayerCollision : MonoBehaviour
         switch (collision.tag)
         {
             case "Antibiotic":
-                playerManager.TakeHit(0.1f);
+                playerManager.SetLife(-0.1f);
+                break;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        switch (collision.tag)
+        {
+            case "LifeOrb":
+                playerManager.SetLife(collision.GetComponent<LifeOrb>().lifeToAdd);
+                collision.gameObject.SetActive(false);
                 break;
         }
     }
