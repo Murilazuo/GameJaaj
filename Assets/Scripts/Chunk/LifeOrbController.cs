@@ -16,12 +16,6 @@ public class LifeOrbController : MonoBehaviour
     {
         int random = Random.Range(0, 100);
         float percentage = spawnPercentage;
-
-        /*while(percentage > 100)
-        {
-            percentage -= 100;
-            SpawnOrb();
-        }*/
         
         if(random <= percentage)
         {

@@ -4,15 +4,13 @@ public class MoveSkate : MonoBehaviour
 {
     Rigidbody2D rig;
     Animator anim;
-    [SerializeField] float accereration, deaccereration, rotationForce, maxSpeed;
-    float speed;
-    float rotation;
+    [SerializeField] internal float accereration, deaccereration, rotationForce, maxSpeed;
+    private float speed;
     bool jump;
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        rotation = transform.localRotation.z;
     }
 
     private void Update()
@@ -36,14 +34,25 @@ public class MoveSkate : MonoBehaviour
             rotationSpeedMod = ((speed / maxSpeed));
         }else if (speed < 0)
         {
-            rotationSpeedMod = ((speed / -maxSpeed));
+            rotationSpeedMod = ((-speed / maxSpeed));
         }
         else
         {
-            rotationSpeedMod = (((speed / -maxSpeed) - 1f) * -1f) + 0.2f;
+            rotationSpeedMod = (((-speed / maxSpeed) - 1f) * -1f) + 0.2f;
         }
 
-        rotationSpeedMod = Mathf.Clamp01(rotationSpeedMod);
+        if(rotationSpeedMod > 1)
+        {
+            rotationSpeedMod = 1;
+        }else if(rotationSpeedMod < -1)
+        {
+            rotationSpeedMod = -1;
+        }
+
+        if (speed == 0)
+        {
+            rotationSpeedMod = 0;
+        }
 
         if (Input.GetKey(KeyCode.D))
         {

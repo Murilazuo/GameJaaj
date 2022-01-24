@@ -3,10 +3,12 @@ using UnityEngine;
 [DefaultExecutionOrder(-1)]
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] private float life, maxLife, score = 0, points = 0, pointsToNextUpgrade;
+    [SerializeField] private float life, score = 0, points = 0, pointsToNextUpgrade;
+    public float maxLife;
     public static PlayerManager instance;
     [SerializeField] BarUi lifeUi, pointsUi;
     public int level;
+    bool canUpgrade = false;
     private void Awake()
     {
         instance = this;
@@ -40,22 +42,24 @@ public class PlayerManager : MonoBehaviour
             points += damage * -1;
         }
 
-        pointsUi.SetBar(points, pointsToNextUpgrade);
-
-        if (points >= pointsToNextUpgrade)
+        if (points >= pointsToNextUpgrade && !canUpgrade)
         {
             Upgrade(); 
-            pointsToNextUpgrade *= 1.5f;
         }
+        pointsUi.SetBar(points, pointsToNextUpgrade);
     }
 
     private void Upgrade()
     {
-
+        canUpgrade = true;
+        pointsToNextUpgrade *= 1.5f;
+        points = pointsToNextUpgrade;
     }
 
     private void GameOver()
     {
 
     }
+
+    
 }
