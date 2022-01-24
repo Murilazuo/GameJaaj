@@ -30,10 +30,19 @@ public class MoveSkate : MonoBehaviour
         if(speed > maxSpeed / 2)
         {
             rotationSpeedMod = (((speed / maxSpeed) - 1f) * -1f) + 0.2f;
-        }
-        else{
+        } 
+        else if (speed > 0)
+        {
             rotationSpeedMod = ((speed / maxSpeed));
+        }else if (speed < 0)
+        {
+            rotationSpeedMod = ((speed / -maxSpeed));
         }
+        else
+        {
+            rotationSpeedMod = (((speed / -maxSpeed) - 1f) * -1f) + 0.2f;
+        }
+
         rotationSpeedMod = Mathf.Clamp01(rotationSpeedMod);
 
         if (Input.GetKey(KeyCode.D))
