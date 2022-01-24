@@ -24,7 +24,6 @@ public class Move : MonoBehaviour
     private void FixedUpdate()
     {
 
-
         if (Input.GetKey(KeyCode.W))
         {
             speedY += acceleration;
@@ -33,13 +32,17 @@ public class Move : MonoBehaviour
         {
             speedY -= acceleration;
         }
-        else if (speedY > 0)
+        else if (speedY > 0.2f)
         {
             speedY -= deacceleration;
         }
-        else if (speedY < 0)
+        else if (speedY < -0.2f)
         {
             speedY += deacceleration;
+        }
+        else
+        {
+            speedY = 0f;
         }
 
         if (Input.GetKey(KeyCode.D))
