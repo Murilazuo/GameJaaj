@@ -12,7 +12,7 @@ public class PlayerCollision : MonoBehaviour
         switch (collision.tag)
         {
             case "Antibiotic":
-                playerManager.SetLife(-0.1f);
+                playerManager.SetLife(-collision.GetComponent<Antibiotic>().damage);
                 break;
         }
     }
