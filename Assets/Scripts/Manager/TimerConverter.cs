@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TimerConverter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static string ToSeconds(float time)
     {
-        
-    }
+        decimal decimalValue = (decimal)time;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        decimal minutes = decimal.Truncate(decimalValue / 60);
+        decimal seconds = decimal.Truncate(decimalValue % 60);
+
+        string zero = string.Empty;
+
+        if (seconds < 10)
+        {
+            zero = "0";
+        }
+
+        string toReturn = string.Format("{0} : {1}{2}", minutes, zero, seconds);
+
+        return toReturn;
+
     }
 }
