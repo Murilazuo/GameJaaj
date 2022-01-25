@@ -15,7 +15,6 @@ public class PlayerManager : MonoBehaviour
     public bool canUpgrade = false;
 
     public static Action OnUpgrade;
-    public static Action OnGameOver;
 
     [SerializeField]int[] orbByLevel;
 
@@ -44,7 +43,7 @@ public class PlayerManager : MonoBehaviour
         {
             lifeUi.SetBar(life, maxLife);
 
-            GameOver();
+            GameManager.instance.EndGame();
             return;
         }
 
@@ -87,12 +86,7 @@ public class PlayerManager : MonoBehaviour
         points = pointsToNextUpgrade[level];
     }
 
-    private void GameOver()
-    {
-        gameOver.SetActive(true);
-        Time.timeScale = 0;
-        OnGameOver?.Invoke();
-    }
+    
 
     
 }

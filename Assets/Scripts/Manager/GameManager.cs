@@ -19,15 +19,16 @@ public class GameManager : MonoBehaviour
         if(time <= 0)
         {
             time = 0;
-            EndTime();
+            EndGame();
         }
         else
         {
             time -= Time.deltaTime;
         }
     }
-    public void EndTime()
+    public void EndGame()
     {
+        Highscore.CheckHighscore((int)PlayerManager.instance.GetComponent<ScoreCounter>().score);
         gameOver.SetActive(true);
         Time.timeScale = 0;
     }
