@@ -9,7 +9,9 @@ public class Upgrade : MonoBehaviour
     GameManager gameManager;
     GameObject upgradePanel;
 
-    [SerializeField] float lifeToAdd, rotationSpeedToSubtract,rotationSpeedToAdd, maxSpeedToAdd, accererationToAdd, timeToAdd;
+    [SerializeField] float lifeToAdd, rotationSpeedToSubtract,
+    rotationSpeedToAdd, maxSpeedToAdd, accererationToAdd, timeToAdd;
+    [SerializeField] int orbPercentageToAdd;
     private void Start()
     {
         playerManager = PlayerManager.instance;
@@ -59,12 +61,12 @@ public class Upgrade : MonoBehaviour
     }
     public void UpgradeLifeOrb(Button button)
     {
+        LifeOrbController.AddPercentage(orbPercentageToAdd);
         button.interactable = false;
     }
     public void UpgradeAntibiotic(Button button)
     {
         button.interactable = false;
-
     }
     public void ResetPlayerPoint()
     {

@@ -6,17 +6,17 @@ public class TimerConverter : MonoBehaviour
     {
         decimal decimalValue = (decimal)time;
 
-        decimal minutes = decimal.Truncate(decimalValue / 60);
-        decimal seconds = decimal.Truncate(decimalValue % 60);
+        decimal seconds = decimal.Truncate(decimalValue);
+        decimal miliSeconds = decimal.Truncate((decimalValue - decimal.Truncate(decimalValue)) * 100);
 
         string zero = string.Empty;
 
-        if (seconds < 10)
+        if (miliSeconds < 10)
         {
             zero = "0";
         }
 
-        string toReturn = string.Format("{0}:{1}{2}", minutes, zero, seconds);
+        string toReturn = string.Format("{0}:{1}{2}", seconds, zero, miliSeconds);
 
         return toReturn;
 
