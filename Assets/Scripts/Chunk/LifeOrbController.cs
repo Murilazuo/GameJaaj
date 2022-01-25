@@ -4,6 +4,7 @@ public class LifeOrbController : MonoBehaviour
 {
     [SerializeField] static float lifeSpawnPercentage = 5;
     [SerializeField] static float timeSpawnPercentage = 10;
+
     [SerializeField] GameObject[] lifeOrbs;
     [SerializeField] GameObject[] timeOrbs;
 

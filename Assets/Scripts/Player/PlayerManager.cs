@@ -4,6 +4,7 @@ using System;
 [DefaultExecutionOrder(-1)]
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] GameObject gameOver;
     [SerializeField] private float life;
     public float points = 0;
     [SerializeField] private float[] pointsToNextUpgrade;
@@ -88,6 +89,7 @@ public class PlayerManager : MonoBehaviour
 
     private void GameOver()
     {
+        gameOver.SetActive(true);
         Time.timeScale = 0;
         OnGameOver?.Invoke();
     }

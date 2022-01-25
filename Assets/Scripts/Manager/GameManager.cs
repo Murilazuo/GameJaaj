@@ -3,6 +3,7 @@ using UnityEngine;
 [DefaultExecutionOrder(-2)]
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject gameOver;
     public int[] antibioticPercentage;
 
     public static GameManager instance;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndTime()
     {
-
+        gameOver.SetActive(true);
+        Time.timeScale = 0;
     }
 }
