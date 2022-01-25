@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    [SerializeField] float timeToAdd;
     PlayerManager playerManager;
+    GameManager gameManager;
+    public int lifeOrb, timeOrb;
     private void Start()
     {
-         playerManager = GetComponent<PlayerManager>();
+        playerManager = GetComponent<PlayerManager>();
+        gameManager = GameManager.instance;
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -22,8 +26,14 @@ public class PlayerCollision : MonoBehaviour
         switch (collision.tag)
         {
             case "LifeOrb":
-                playerManager.SetLife(collision.GetComponent<LifeOrb>().lifeToAdd);
+                playerManager.SetLife(collision.GetComponent<Orb>().lifeToAdd);
                 collision.gameObject.SetActive(false);
+                lifeOrb++;
+                break;
+            case "TimeOrb":
+                gameManager.time += collision.GetComponent<Orb>().lifeToAdd;
+                collision.gameObject.SetActive(false);
+                timeOrb++;
                 break;
         }
     }

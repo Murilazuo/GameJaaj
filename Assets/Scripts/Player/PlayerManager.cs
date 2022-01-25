@@ -16,6 +16,8 @@ public class PlayerManager : MonoBehaviour
     public static Action OnUpgrade;
     public static Action OnGameOver;
 
+    [SerializeField]int[] orbByLevel;
+
     DisplayLevel displayLevel;
 
     private void Awake()
@@ -55,7 +57,7 @@ public class PlayerManager : MonoBehaviour
             }
             if(level > pointsToNextUpgrade.Length-1)
             {
-                if (points >= pointsToNextUpgrade[pointsToNextUpgrade.Length]) ;
+                if (points >= pointsToNextUpgrade[pointsToNextUpgrade.Length]);
             }
             else if (points >= pointsToNextUpgrade[level])
             {
@@ -72,6 +74,11 @@ public class PlayerManager : MonoBehaviour
 
     private void Upgrade()
     {
+        if(level >= orbByLevel.Length)
+        {
+            LifeOrbController.AddPercentage(orbByLevel[level]);
+        }
+
         displayLevel.UpdateLevel();
         Time.timeScale = 0;
         OnUpgrade?.Invoke();
@@ -81,6 +88,7 @@ public class PlayerManager : MonoBehaviour
 
     private void GameOver()
     {
+        Time.timeScale = 0;
         OnGameOver?.Invoke();
     }
 

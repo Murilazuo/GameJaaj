@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class LifeOrbController : MonoBehaviour
 {
-    [SerializeField] static float spawnPercentage = 5;
+    [SerializeField] static float lifeSpawnPercentage = 5;
+    [SerializeField] static float timeSpawnPercentage = 10;
     [SerializeField] GameObject[] lifeOrbs;
+    [SerializeField] GameObject[] timeOrbs;
+
+
     void Start()
     {
         foreach(GameObject orb in lifeOrbs)
+        {
+            orb.SetActive(false);
+        }
+        foreach (GameObject orb in timeOrbs)
         {
             orb.SetActive(false);
         }
@@ -15,22 +23,32 @@ public class LifeOrbController : MonoBehaviour
     private void OnEnable()
     {
         int random = Random.Range(0, 100);
-        float percentage = spawnPercentage;
+        float percentage = lifeSpawnPercentage;
         
         if(random <= percentage)
         {
-            SpawnOrb();
+            SpawnOrb(lifeOrbs);
         }
-    }
-    void SpawnOrb()
-    {
-        int index = Random.Range(0, lifeOrbs.Length);
 
-        lifeOrbs[index].SetActive(true);
+        random = Random.Range(0, 100);
+        percentage = timeSpawnPercentage;
+
+        if (random <= percentage)
+        {
+            SpawnOrb(timeOrbs);
+        }
+
+
+    }
+    void SpawnOrb(GameObject[] orb)
+    {
+        int index = Random.Range(0, orb.Length);
+
+        orb[index].SetActive(true);
     }
     public static void AddPercentage(int percentage)
     {
-        spawnPercentage += percentage;
+        lifeSpawnPercentage += percentage;
     }
 
     Vector2 GetCenter()

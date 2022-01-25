@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7833366043484896973}
   - component: {fileID: 7833366043484896947}
   m_Layer: 0
-  m_Name: Life Orb
-  m_TagString: LifeOrb
+  m_Name: Time Orb
+  m_TagString: TimeOrb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 2edd859ab577b9b4ea810d5acee36e38, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.13578582, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,5 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f8349e70afe0be4d8e787c1aabb21f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: LifeOrb
-  lifeToAdd: 2
+  _tag: TimeOrb
+  lifeToAdd: 20

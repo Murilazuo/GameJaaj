@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class LifeOrb : MonoBehaviour
+public class Orb : MonoBehaviour
 {
+    public string _tag;
     public float lifeToAdd;
     private void Start()
     {
-        gameObject.tag = "LifeOrb";
+        gameObject.tag = _tag;
     }
 }

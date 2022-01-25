@@ -15,7 +15,7 @@ public class MoveSkate : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !jump)
+        if (Input.GetKeyDown(KeyCode.Space) && !jump && Time.timeScale > 0)
         {
             Jump();
         }
