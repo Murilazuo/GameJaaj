@@ -7,6 +7,7 @@ public class Upgrade : MonoBehaviour
     PlayerManager playerManager;
     MoveSkate moveSkate;
     GameManager gameManager;
+    GameObject upgradePanel;
 
     [SerializeField] float lifeToAdd, rotationSpeedToSubtract,rotationSpeedToAdd, maxSpeedToAdd, accererationToAdd, timeToAdd;
     private void Start()
@@ -14,12 +15,30 @@ public class Upgrade : MonoBehaviour
         playerManager = PlayerManager.instance;
         gameManager = GameManager.instance;
         moveSkate = playerManager.GetComponent<MoveSkate>();
+
+        upgradePanel = transform.GetChild(0).gameObject;
+        upgradePanel.SetActive(false);
     }
+
+    private void OnEnable()
+    {
+        PlayerManager.OnUpgrade += OpenUpgrade;
+    }
+    private void OnDisable()
+    {
+        PlayerManager.OnUpgrade -= OpenUpgrade;
+    }
+    void OpenUpgrade()
+    {
+        upgradePanel.SetActive(true);
+    }
+
     public void UpgradeLife()
     {
         playerManager.maxLife += lifeToAdd;
         playerManager.SetLife(lifeToAdd);
         moveSkate.rotationForce -= rotationSpeedToSubtract;
+
     }
     public void UpgradeControl()
     {
@@ -46,6 +65,11 @@ public class Upgrade : MonoBehaviour
     {
         button.interactable = false;
 
+    }
+    public void ResetPlayerPoint()
+    {
+        playerManager.canUpgrade = false;
+        playerManager.points = 0;
     }
 }
 

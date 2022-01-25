@@ -1,14 +1,19 @@
 using UnityEngine;
+using System;
 
 [DefaultExecutionOrder(-1)]
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] private float life, score = 0, points = 0, pointsToNextUpgrade;
+    [SerializeField] private float life;
+    public float points = 0;
+    [SerializeField] private float[] pointsToNextUpgrade;
     public float maxLife;
     public static PlayerManager instance;
     [SerializeField] BarUi lifeUi, pointsUi;
     public int level;
-    bool canUpgrade = false;
+    public bool canUpgrade = false;
+
+    public static Action OnUpgrade;
     private void Awake()
     {
         instance = this;
@@ -37,23 +42,35 @@ public class PlayerManager : MonoBehaviour
 
         lifeUi.SetBar(life, maxLife);
 
-        if(damage < 0)
+        if (!canUpgrade)
         {
-            points += damage * -1;
+            if (damage < 0)
+            {
+                points += damage * -1;
+            }
+            if(level > pointsToNextUpgrade.Length-1)
+            {
+                if (points >= pointsToNextUpgrade[pointsToNextUpgrade.Length]) ;
+            }
+            else if (points >= pointsToNextUpgrade[level])
+            {
+                Upgrade();
+            }
         }
-
-        if (points >= pointsToNextUpgrade && !canUpgrade)
+        float maxPoints = pointsToNextUpgrade[pointsToNextUpgrade.Length - 1];
+        if(level < pointsToNextUpgrade.Length)
         {
-            Upgrade(); 
+            maxPoints = pointsToNextUpgrade[level];
         }
-        pointsUi.SetBar(points, pointsToNextUpgrade);
+        pointsUi.SetBar(points, maxPoints);
     }
 
     private void Upgrade()
     {
+        
+        OnUpgrade?.Invoke();
         canUpgrade = true;
-        pointsToNextUpgrade *= 1.5f;
-        points = pointsToNextUpgrade;
+        points = pointsToNextUpgrade[level];
     }
 
     private void GameOver()
