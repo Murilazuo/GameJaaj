@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab47c83b9e1d694ab95728ce381957a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToSpawn: 40
+  distanceToSpawn: 50
   chunksToSpawn:
   - {fileID: 1933782295695109183, guid: 2c2e61e95d9ea414ba10a07806f56499, type: 3}
   - {fileID: 1933782295695109183, guid: d37133f298f2e8046b307a16eedf658e, type: 3}

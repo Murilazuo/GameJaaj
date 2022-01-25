@@ -70,6 +70,7 @@ public class Upgrade : MonoBehaviour
     }
     public void ResetPlayerPoint()
     {
+        Time.timeScale = 1;
         playerManager.canUpgrade = false;
         playerManager.points = 0;
     }

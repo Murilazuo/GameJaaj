@@ -14,6 +14,8 @@ public class PlayerManager : MonoBehaviour
     public bool canUpgrade = false;
 
     public static Action OnUpgrade;
+    public static Action OnGameOver;
+
     private void Awake()
     {
         instance = this;
@@ -67,7 +69,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Upgrade()
     {
-        
+        Time.timeScale = 0;
         OnUpgrade?.Invoke();
         canUpgrade = true;
         points = pointsToNextUpgrade[level];
@@ -75,7 +77,7 @@ public class PlayerManager : MonoBehaviour
 
     private void GameOver()
     {
-
+        OnGameOver?.Invoke();
     }
 
     
