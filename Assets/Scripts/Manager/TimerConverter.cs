@@ -16,7 +16,7 @@ public class TimerConverter : MonoBehaviour
             zero = "0";
         }
 
-        string toReturn = string.Format("{0} : {1}{2}", minutes, zero, seconds);
+        string toReturn = string.Format("{0}:{1}{2}", minutes, zero, seconds);
 
         return toReturn;
 

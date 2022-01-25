@@ -53,6 +53,10 @@ public class MoveSkate : MonoBehaviour
         {
             rotationSpeedMod = 0;
         }
+        if (speed < 0)
+        {
+            rotationSpeedMod *= -1;
+        }
 
         if (Input.GetKey(KeyCode.D))
         {
