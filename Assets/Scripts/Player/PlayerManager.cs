@@ -16,6 +16,8 @@ public class PlayerManager : MonoBehaviour
     public static Action OnUpgrade;
     public static Action OnGameOver;
 
+    DisplayLevel displayLevel;
+
     private void Awake()
     {
         instance = this;
@@ -27,6 +29,7 @@ public class PlayerManager : MonoBehaviour
     {
         life = maxLife;
         level = 0;
+        displayLevel = FindObjectOfType<DisplayLevel>();
     }
     internal void SetLife(float damage)
     {
@@ -69,6 +72,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Upgrade()
     {
+        displayLevel.UpdateLevel();
         Time.timeScale = 0;
         OnUpgrade?.Invoke();
         canUpgrade = true;

@@ -31,15 +31,7 @@ public class MoveSkate : MonoBehaviour
         } 
         else
         {
-            rotationSpeedMod = ((((-speed / maxSpeed) - 1f) * -1f)*0.8f) + 0.2f;
-        }
-
-        if(rotationSpeedMod > 1)
-        {
-            rotationSpeedMod = 1;
-        }else if(rotationSpeedMod < -1)
-        {
-            rotationSpeedMod = -1;
+            rotationSpeedMod = ((((-speed / maxSpeed) - 1f) * -1f) * 0.8f) - 0.2f;
         }
 
         if (speed == 0)
