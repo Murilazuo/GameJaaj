@@ -10,11 +10,11 @@ public class Fade : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         GetComponent<Image>().enabled = true;
+        fade = this;
     }
     private void Start()
     {
 
-        fade = this;
         anim = GetComponent<Animator>();
         anim.SetTrigger("Fade");
     }
