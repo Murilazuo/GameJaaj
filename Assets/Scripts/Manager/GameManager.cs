@@ -9,10 +9,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public float time;
-    
+    SoundManager soundManager;
     private void Awake()
     {
         instance = this;
+        soundManager = SoundManager.soundManager;
     }
     private void FixedUpdate()
     {
@@ -26,10 +27,18 @@ public class GameManager : MonoBehaviour
             time -= Time.deltaTime;
         }
     }
+    public void Click()
+    {
+        soundManager.PlaySound("Click");
+    }
     public void EndGame()
     {
         Highscore.CheckHighscore((int)PlayerManager.instance.GetComponent<ScoreCounter>().score);
         gameOver.SetActive(true);
         Time.timeScale = 0;
+
+        soundManager.StopSound("Walk");
+        soundManager.StopSound("WalkAntibiotic");
+
     }
 }

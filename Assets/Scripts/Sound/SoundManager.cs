@@ -1,15 +1,27 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] Sound[] sounds;
+    
     public static SoundManager soundManager;
+    private void Awake()
+    {
+        if(soundManager == null)
+        {
+        soundManager = this;
+        DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
     void Start()
     {
-        DontDestroyOnLoad(this);
         
-        soundManager = this;
 
         foreach(Sound s in sounds)
         {
@@ -24,10 +36,34 @@ public class SoundManager : MonoBehaviour
 
         PlaySound("Music");
     }
-
+    public void SetVolumeFx(Slider slider)
+    {
+        foreach(Sound s in sounds)
+        {
+            if(s.name != "Music")
+            {
+                s.audioSource.volume = s.volume * slider.value;
+            }
+        }
+    }
+    public void SetVolumeMusic(Slider slider)
+    {
+        Sound sound = Array.Find(sounds, s => s.name == "Music");
+        sound.audioSource.volume = sound.volume * slider.value;
+    }
     public void PlaySound(string name)
     {
-        print(name);
-        Array.Find(sounds, s => s.name == name).audioSource.Play();
+        Sound sound = Array.Find(sounds, s => s.name == name);
+
+        print(sound.name);
+        sound.audioSource.Play();
+    }
+    public void StopSound(string name)
+    {
+        Array.Find(sounds, s => s.name == name).audioSource.Stop();
+    }
+    public AudioSource GetSound(string name)
+    {
+        return Array.Find(sounds, s => s.name == name).audioSource;
     }
 }

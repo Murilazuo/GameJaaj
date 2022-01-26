@@ -7,8 +7,12 @@ public class MoveSkate : MonoBehaviour
     [SerializeField] internal float accereration, deaccereration, rotationForce, maxSpeed;
     private float speed;
     bool jump;
+    public bool inAntibiotic;
+    SoundManager soundManager;
     void Start()
     {
+        soundManager = SoundManager.soundManager;
+
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -34,10 +38,39 @@ public class MoveSkate : MonoBehaviour
             rotationSpeedMod = ((((-speed / maxSpeed) - 1f) * -1f) * 0.8f) - 0.2f;
         }
 
-        if (speed == 0)
+        if (speed > -0.5 && speed < 0.5)
         {
             rotationSpeedMod = 0;
+            
+            if (soundManager.GetSound("Walk").isPlaying)
+            {
+                soundManager.StopSound("Walk");
+            }else if (soundManager.GetSound("WalkAntibiotic").isPlaying)
+            {
+                soundManager.StopSound("WalkAntibiotic");
+            }
+        }else 
+        {
+            if (!inAntibiotic && !soundManager.GetSound("Walk").isPlaying)
+            {
+                if (soundManager.GetSound("WalkAntibiotic").isPlaying)
+                {
+                    soundManager.StopSound("WalkAntibiotic");
+                }
+
+                soundManager.PlaySound("Walk");
+            }
+            else if (inAntibiotic && !soundManager.GetSound("WalkAntibiotic").isPlaying)
+            {
+                if (soundManager.GetSound("Walk").isPlaying)
+                {
+                    soundManager.StopSound("Walk");
+                }
+
+                soundManager.PlaySound("WalkAntibiotic");
+            }
         }
+
         if (speed < 0)
         {
             rotationSpeedMod *= -1;

@@ -51,7 +51,55 @@ MonoBehaviour:
     loop: 1
     clip: {fileID: 8300000, guid: ee38ddeacf2867944818a68f2e853a83, type: 3}
     audioSource: {fileID: 0}
-  - name: fx
+  - name: Walk
+    volume: 1
+    pitch: 1
+    loop: 1
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: WalkAntibiotic
+    volume: 1
+    pitch: 1
+    loop: 1
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: Evolve
+    volume: 1
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: Bite
+    volume: 1
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: Heal
+    volume: 1
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: GainTime
+    volume: 1
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: EndTime
+    volume: 1
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: Click
+    volume: 1
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 27eeaf4e0924cac4e8ecbad439ee1c02, type: 3}
+    audioSource: {fileID: 0}
+  - name: ClickUpgrade
     volume: 1
     pitch: 1
     loop: 0

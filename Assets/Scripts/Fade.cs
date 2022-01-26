@@ -1,14 +1,25 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Fade : MonoBehaviour
 {
     Animator anim;
-    void Start()
+    public static Fade fade;
+    private void Awake()
     {
-        anim = GetComponent<Animator>();
+        Time.timeScale = 1.0f;
+        GetComponent<Image>().enabled = true;
     }
-    public void ChangeFade()
+    private void Start()
     {
+
+        fade = this;
+        anim = GetComponent<Animator>();
         anim.SetTrigger("Fade");
+    }
+    public void ChangeFade(string fade)
+    {
+        anim.SetTrigger(fade);
     }
 }

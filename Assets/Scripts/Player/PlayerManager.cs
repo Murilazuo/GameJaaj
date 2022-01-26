@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] BarUi lifeUi, pointsUi;
     public int level;
     public bool canUpgrade = false;
-
+    SoundManager soundManager;
     public static Action OnUpgrade;
 
     [SerializeField]int[] orbByLevel;
@@ -23,7 +23,7 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
+        soundManager = SoundManager.soundManager;
         transform.position = new Vector2(Mathf.Round(transform.position.x / 20) * 20, 
             Mathf.Round(transform.position.y / 20) * 20);
     }
@@ -79,11 +79,14 @@ public class PlayerManager : MonoBehaviour
             LifeOrbController.AddPercentage(orbByLevel[level]);
         }
 
+
         displayLevel.UpdateLevel();
         Time.timeScale = 0;
         OnUpgrade?.Invoke();
         canUpgrade = true;
         points = pointsToNextUpgrade[level];
+        soundManager.StopSound("Walk");
+        soundManager.StopSound("WalkAntibiotic");
     }
 
     

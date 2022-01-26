@@ -8,6 +8,7 @@ public class Upgrade : MonoBehaviour
     MoveSkate moveSkate;
     GameManager gameManager;
     GameObject upgradePanel;
+    SoundManager soundManager;
 
     [SerializeField] float lifeToAdd, rotationSpeedToSubtract,
     rotationSpeedToAdd, maxSpeedToAdd, accererationToAdd, timeToAdd;
@@ -16,6 +17,7 @@ public class Upgrade : MonoBehaviour
     {
         playerManager = PlayerManager.instance;
         gameManager = GameManager.instance;
+        soundManager = SoundManager.soundManager;
         moveSkate = playerManager.GetComponent<MoveSkate>();
 
         upgradePanel = transform.GetChild(0).gameObject;
@@ -40,7 +42,7 @@ public class Upgrade : MonoBehaviour
         playerManager.maxLife += lifeToAdd;
         playerManager.SetLife(lifeToAdd);
         moveSkate.rotationForce -= rotationSpeedToSubtract;
-
+        soundManager.PlaySound("Heal");
     }
     public void UpgradeControl()
     {
@@ -57,6 +59,8 @@ public class Upgrade : MonoBehaviour
 
     public void UpgradeTimer()
     {
+        soundManager.PlaySound("GainTime");
+
         gameManager.time += timeToAdd;
     }
     public void UpgradeLifeOrb(Button button)
@@ -64,12 +68,9 @@ public class Upgrade : MonoBehaviour
         LifeOrbController.AddPercentage(orbPercentageToAdd);
         button.interactable = false;
     }
-    public void UpgradeAntibiotic(Button button)
-    {
-        button.interactable = false;
-    }
     public void ResetPlayerPoint()
     {
+        soundManager.PlaySound("ClickUpgrade");
         Time.timeScale = 1;
         playerManager.canUpgrade = false;
         playerManager.points = 0;
