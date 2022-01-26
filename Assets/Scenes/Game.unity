@@ -833,6 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac8bcd42c3e4eb49bc6271e59c92069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagToFollow: Player
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

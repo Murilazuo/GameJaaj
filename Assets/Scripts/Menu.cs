@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && !play)
         {
+            SoundManager.soundManager.PlaySound("fx");
             FindObjectOfType<Fade>().ChangeFade();
             play = true;
             Invoke(nameof(Play),1f);
