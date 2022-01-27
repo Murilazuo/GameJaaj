@@ -4,6 +4,7 @@ using System.Collections;
 public class SceneController : MonoBehaviour
 {
     string newScene;
+  
     public void GoToScene(string scene)
     {
         FindObjectOfType<Fade>().ChangeFade("FadeIn");
