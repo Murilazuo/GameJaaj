@@ -15,11 +15,11 @@ F:/Projetos/Jogos/GameJaaj
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49690
+61604
 Successfully changed project path to: F:/Projetos/Jogos/GameJaaj
 F:/Projetos/Jogos/GameJaaj
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path F:/Unity/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'F:/Unity/Editor/2020.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/Unity/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/Unity/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001257 seconds.
+Registered in 0.001294 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 55.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.728 seconds
+- Completed reload, in  0.758 seconds
 Domain Reload Profiling:
-	ReloadAssembly (729ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (759ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (580ms)
-			LoadAssemblies (67ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
+			SetupTypeCache (205ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (230ms)
+			SetupLoadedEditorAssemblies (241ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
+				RefreshPlugins (55ms)
 				BeforeProcessingInitializeOnLoad (22ms)
-				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadAttributes (120ms)
 				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -73,51 +73,51 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003658 seconds.
+Registered in 0.003695 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 125.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.394 seconds
+- Completed reload, in  1.586 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1395ms)
-		BeginReloadAssembly (168ms)
+	ReloadAssembly (1587ms)
+		BeginReloadAssembly (194ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1159ms)
-			LoadAssemblies (109ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1321ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (376ms)
+			SetupTypeCache (427ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (443ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (551ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (250ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				RefreshPlugins (126ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (261ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
 Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2236 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.7 MB.
-System memory in use after: 98.8 MB.
+Unloading 2237 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 98.9 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2671.
-Total: 3.685000 ms (FindLiveObjects: 0.186000 ms CreateObjectMapping: 0.098000 ms MarkObjects: 3.256000 ms  DeleteObjects: 0.144000 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2672.
+Total: 4.365200 ms (FindLiveObjects: 0.216100 ms CreateObjectMapping: 0.104600 ms MarkObjects: 3.961300 ms  DeleteObjects: 0.082000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,576 +132,240 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Chunks/Chunk (0).prefab
-  artifactKey: Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (0).prefab using Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fe7b68cd207c3d0168e21ed6ebbd36') in 0.173680 seconds 
-  Import took 0.178311 seconds .
+  path: Assets/Sprites/Game/Antibiotic/Chunk6
+  artifactKey: Guid(788459023bef2a84a842e019ccc84369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6 using Guid(788459023bef2a84a842e019ccc84369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493e1178658c82918a54983caa2e3e50') in 0.012460 seconds 
+  Import took 0.017215 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bfa141cce52f095189aeac1a326e1b9') in 0.020014 seconds 
-  Import took 0.024695 seconds .
+  Time since last request: 5.123285 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca1.png
+  artifactKey: Guid(128960056e794dd48bfe8436d632b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca1.png using Guid(128960056e794dd48bfe8436d632b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e2e718d8ab64618980de2eb186b97c') in 0.174102 seconds 
+  Import took 0.178305 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 42.754452 seconds.
-  path: Assets/Sprites/Game/Antibiotic
-  artifactKey: Guid(dd4843e18278baa4080862c99bd335a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic using Guid(dd4843e18278baa4080862c99bd335a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895b8ea51ce8ec03e9192f81c27030b1') in 0.003874 seconds 
-  Import took 0.010042 seconds .
+  Time since last request: 0.091040 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca2.png
+  artifactKey: Guid(c8de6c58b9926b84aab54db5754ef906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca2.png using Guid(c8de6c58b9926b84aab54db5754ef906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a65d93b40127c2d3b24d83b1ee69b6d') in 0.024610 seconds 
+  Import took 0.029468 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.326001 seconds.
-  path: Assets/Sprites/Game/Antibiotic/poça 1.png
-  artifactKey: Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/poça 1.png using Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbf66e8964c7e87e861e3ca9228288e') in 0.079908 seconds 
-  Import took 0.085628 seconds .
+  Time since last request: 6.275889 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca2.png
+  artifactKey: Guid(c8de6c58b9926b84aab54db5754ef906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca2.png using Guid(c8de6c58b9926b84aab54db5754ef906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b10a3a5bcd6c93e76cd169eb5ddb5a') in 0.012636 seconds 
+  Import took 0.018120 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.607224 seconds.
-  path: Assets/Sprites/Game/Antibiotic/poça 1.png
-  artifactKey: Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/poça 1.png using Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de58ad9ccf37f7136163d3ebe32b19a') in 0.014434 seconds 
-  Import took 0.019525 seconds .
+  Time since last request: 13.452075 seconds.
+  path: Assets/Prefabs/Chunks/Chunk (5) 1.prefab
+  artifactKey: Guid(e924c5bf48016304980a8bc83587b1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chunks/Chunk (5) 1.prefab using Guid(e924c5bf48016304980a8bc83587b1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a4493cee1fb7f48b443e8652ee95cd') in 0.063690 seconds 
+  Import took 0.068051 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.770959 seconds.
-  path: Assets/Sprites/Game/Antibiotic/poça 1.png
-  artifactKey: Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/poça 1.png using Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7ad53807621eb540e00efdf2f77570') in 0.057988 seconds 
-  Import took 0.062230 seconds .
+  Time since last request: 5.565771 seconds.
+  path: Assets/Prefabs/Chunks/Chunk (6).prefab
+  artifactKey: Guid(e924c5bf48016304980a8bc83587b1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chunks/Chunk (6).prefab using Guid(e924c5bf48016304980a8bc83587b1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187eaa47034fe0983fa4b1116210d2dc') in 0.020025 seconds 
+  Import took 0.025341 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 68.263320 seconds.
-  path: Assets/Sprites/Game/Antibiotic/poça 1.png
-  artifactKey: Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/poça 1.png using Guid(d8f43d3d1c4931340be85414b73eabf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09de748d41efa609f83d35adc9f53171') in 0.024942 seconds 
-  Import took 0.030222 seconds .
+  Time since last request: 531.826366 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca1.png
+  artifactKey: Guid(128960056e794dd48bfe8436d632b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca1.png using Guid(128960056e794dd48bfe8436d632b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341de3774e6e112e8789afac61462475') in 0.024334 seconds 
+  Import took 0.028944 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 78.417023 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1085bd844f28478976fbd809409234e7') in 0.016075 seconds 
-  Import took 0.021961 seconds .
+  Time since last request: 7.555352 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca3.png
+  artifactKey: Guid(078a8e6319d46a8469473a3c8737a133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca3.png using Guid(078a8e6319d46a8469473a3c8737a133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57be431cc3bf628c36912b1e3a91f458') in 0.018193 seconds 
+  Import took 0.022426 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.924665 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4abd3004ea5ba0c1a4125a3cab23ed59') in 0.010637 seconds 
-  Import took 0.015097 seconds .
+  Time since last request: 10.645842 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca3.png
+  artifactKey: Guid(078a8e6319d46a8469473a3c8737a133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca3.png using Guid(078a8e6319d46a8469473a3c8737a133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43618476dcfca36b2cbdf25492410e5a') in 0.025008 seconds 
+  Import took 0.028962 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.804298 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5511548fbf4a885f44a0a85882219cbd') in 0.010199 seconds 
-  Import took 0.014977 seconds .
+  Time since last request: 24.753057 seconds.
+  path: Assets/Animation/Player.controller
+  artifactKey: Guid(1e2af4c3429df0844ac5dce6ecec1252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player.controller using Guid(1e2af4c3429df0844ac5dce6ecec1252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6fa31c72e82f58f38a3c59df3d4f9d') in 0.011680 seconds 
+  Import took 0.016524 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.447974 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c27ba48b3ce64a617ad4b8b05c2759') in 0.015230 seconds 
-  Import took 0.021127 seconds .
+  Time since last request: 25.164386 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk6/poca1.png
+  artifactKey: Guid(128960056e794dd48bfe8436d632b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk6/poca1.png using Guid(128960056e794dd48bfe8436d632b2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273f2188e7dbd17d10f5d180a6666e7f') in 0.037236 seconds 
+  Import took 0.042877 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1140.258715 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1
-  artifactKey: Guid(083db48ad7bfb0a4e9db274b1246be7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1 using Guid(083db48ad7bfb0a4e9db274b1246be7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60135c6a70326d2cc9859a78817bbf6b') in 0.008643 seconds 
-  Import took 0.014826 seconds .
+  Time since last request: 2336.161778 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7
+  artifactKey: Guid(85fa8a86a90ccf7438207b3b81fed5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7 using Guid(85fa8a86a90ccf7438207b3b81fed5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a6ce8d936d9418b939bc9dc423efe3') in 0.007603 seconds 
+  Import took 0.013817 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.820198 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 3.png
-  artifactKey: Guid(21109d2659930f240b5cd1be4cadb316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 3.png using Guid(21109d2659930f240b5cd1be4cadb316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e3083e8e457072f44b4f9362d997ca') in 0.019765 seconds 
-  Import took 0.025133 seconds .
+  Time since last request: 7.166360 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca1.png
+  artifactKey: Guid(1d626bc315a9c3c47a812d8f596cddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca1.png using Guid(1d626bc315a9c3c47a812d8f596cddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f36643c81eb8a80faac01f4aff58d4e') in 0.026104 seconds 
+  Import took 0.032377 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.128738 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 2.png
-  artifactKey: Guid(7de29a9dfe3914045a78defed73548bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 2.png using Guid(7de29a9dfe3914045a78defed73548bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9788aadaf4718f88a2ca0fae51fddac3') in 0.019253 seconds 
-  Import took 0.023577 seconds .
+  Time since last request: 0.456682 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca3.png
+  artifactKey: Guid(dd531bcc965098041a1afe9aab2c06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca3.png using Guid(dd531bcc965098041a1afe9aab2c06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e9f8b638711d106d5285408ec91d32') in 0.023800 seconds 
+  Import took 0.028169 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.779018 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 4.png
-  artifactKey: Guid(f12ec1ac8fed9be4389d0b46866c9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 4.png using Guid(f12ec1ac8fed9be4389d0b46866c9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f5e22fe6a93b6c2dde0efc1489cded') in 0.019925 seconds 
-  Import took 0.024427 seconds .
+  Time since last request: 6.212413 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca3.png
+  artifactKey: Guid(dd531bcc965098041a1afe9aab2c06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca3.png using Guid(dd531bcc965098041a1afe9aab2c06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6811da98a2408e9af494f5025d59eb') in 0.018306 seconds 
+  Import took 0.024993 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.157237 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 4.png
-  artifactKey: Guid(f12ec1ac8fed9be4389d0b46866c9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 4.png using Guid(f12ec1ac8fed9be4389d0b46866c9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a995003dba54932ce258cffbdd05aa1') in 0.014967 seconds 
-  Import took 0.019675 seconds .
+  Time since last request: 0.717503 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca1.png
+  artifactKey: Guid(1d626bc315a9c3c47a812d8f596cddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca1.png using Guid(1d626bc315a9c3c47a812d8f596cddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95824989e5de6377726880316d6268d7') in 0.014263 seconds 
+  Import took 0.019029 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.996137 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 2.png
-  artifactKey: Guid(7de29a9dfe3914045a78defed73548bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 2.png using Guid(7de29a9dfe3914045a78defed73548bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fca94992a36c969e2464fe30ff40ae') in 0.014837 seconds 
-  Import took 0.019961 seconds .
+  Time since last request: 50.264719 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca1.png
+  artifactKey: Guid(1d626bc315a9c3c47a812d8f596cddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca1.png using Guid(1d626bc315a9c3c47a812d8f596cddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5f27ce00ce142fd87b5f2501ff14ab') in 0.023534 seconds 
+  Import took 0.037119 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.001594 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 2.png
-  artifactKey: Guid(7de29a9dfe3914045a78defed73548bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 2.png using Guid(7de29a9dfe3914045a78defed73548bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444aff19cbf3cc5fc6aaab963365d090') in 0.025188 seconds 
-  Import took 0.029237 seconds .
+  Time since last request: 3.243701 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca2.png
+  artifactKey: Guid(c7751c993e98f054f81fe2c97fbb38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca2.png using Guid(c7751c993e98f054f81fe2c97fbb38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f44022aba59b3ebe63f7700ab16f52') in 0.014610 seconds 
+  Import took 0.027124 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.353320 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 3.png
-  artifactKey: Guid(21109d2659930f240b5cd1be4cadb316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 3.png using Guid(21109d2659930f240b5cd1be4cadb316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6de24cc78d885df7231ff0cb98a3c77') in 0.013484 seconds 
-  Import took 0.017818 seconds .
+  Time since last request: 23.847827 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca2.png
+  artifactKey: Guid(c7751c993e98f054f81fe2c97fbb38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca2.png using Guid(c7751c993e98f054f81fe2c97fbb38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8c4ee5dd099580d99bfb37b1af277e') in 0.025299 seconds 
+  Import took 0.045431 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 33.409408 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 3.png
-  artifactKey: Guid(21109d2659930f240b5cd1be4cadb316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 3.png using Guid(21109d2659930f240b5cd1be4cadb316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ea1eb278c42f7e5ab4c1bb4d939615') in 0.024540 seconds 
-  Import took 0.028987 seconds .
+  Time since last request: 19.733181 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca2.png
+  artifactKey: Guid(c7751c993e98f054f81fe2c97fbb38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca2.png using Guid(c7751c993e98f054f81fe2c97fbb38c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27efc7a1e1e024265215197281903a93') in 0.022380 seconds 
+  Import took 0.027393 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.316979 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 4.png
-  artifactKey: Guid(f12ec1ac8fed9be4389d0b46866c9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 4.png using Guid(f12ec1ac8fed9be4389d0b46866c9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18dd1289b62f86bf19541fffe0b7a29a') in 0.024895 seconds 
-  Import took 0.028899 seconds .
+  Time since last request: 38.291668 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca3.png
+  artifactKey: Guid(dd531bcc965098041a1afe9aab2c06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca3.png using Guid(dd531bcc965098041a1afe9aab2c06a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f64b9735408b43eb66137c599080692') in 0.031582 seconds 
+  Import took 0.043361 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.660602 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 5-sheet.png
-  artifactKey: Guid(3e1e945ad5189d84887161987183f265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 5-sheet.png using Guid(3e1e945ad5189d84887161987183f265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a6f2c8ee4e6f8c0fb2c8a49c247c1a') in 0.012174 seconds 
-  Import took 0.016744 seconds .
+  Time since last request: 6.002997 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca4.png
+  artifactKey: Guid(102772945e5b73f45b8299e19eda370a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca4.png using Guid(102772945e5b73f45b8299e19eda370a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d73d478bbc1258cdffc54f8923d06b3') in 0.013221 seconds 
+  Import took 0.018435 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.554054 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 5-sheet.png
-  artifactKey: Guid(3e1e945ad5189d84887161987183f265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 5-sheet.png using Guid(3e1e945ad5189d84887161987183f265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b4bdf53e1a96bd32f5002ddb3dc891') in 0.021683 seconds 
-  Import took 0.025938 seconds .
+  Time since last request: 29.704716 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca4.png
+  artifactKey: Guid(102772945e5b73f45b8299e19eda370a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca4.png using Guid(102772945e5b73f45b8299e19eda370a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d7d7e3063508c6b34f194eb12c89dc9') in 0.023889 seconds 
+  Import took 0.042737 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.199148 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 6-sheet.png
-  artifactKey: Guid(f96d823885d64e24db41ace597c4570f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 6-sheet.png using Guid(f96d823885d64e24db41ace597c4570f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b9f60515bc120bc05cc9a25e6c8c23') in 0.015202 seconds 
-  Import took 0.019432 seconds .
+  Time since last request: 1.013027 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca5.png
+  artifactKey: Guid(426c81ae313bc9546ae362de0768612a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca5.png using Guid(426c81ae313bc9546ae362de0768612a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bad6b658153d43c82b3c2ad81eb9cec') in 0.018449 seconds 
+  Import took 0.023127 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.223565 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 6-sheet.png
-  artifactKey: Guid(f96d823885d64e24db41ace597c4570f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 6-sheet.png using Guid(f96d823885d64e24db41ace597c4570f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658db6760f0b81d87490b54239f95c0b') in 0.025461 seconds 
-  Import took 0.030452 seconds .
+  Time since last request: 21.057429 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca5.png
+  artifactKey: Guid(426c81ae313bc9546ae362de0768612a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca5.png using Guid(426c81ae313bc9546ae362de0768612a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff65f8872283a1c6a54f307bba18dacb') in 0.025631 seconds 
+  Import took 0.030173 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.474743 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 7-sheet.png
-  artifactKey: Guid(a6ee2159df374cd45ad333883f00cc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 7-sheet.png using Guid(a6ee2159df374cd45ad333883f00cc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8412a4ddbeab7d74a9d9f7fa6a56d594') in 0.012669 seconds 
-  Import took 0.017053 seconds .
+  Time since last request: 16.548884 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca6.png
+  artifactKey: Guid(63212aed37a405b439b507d620a7de83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca6.png using Guid(63212aed37a405b439b507d620a7de83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c829b8fd045443174f782fdb97a7e80b') in 0.014957 seconds 
+  Import took 0.019232 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.302241 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk1/poça 7-sheet.png
-  artifactKey: Guid(a6ee2159df374cd45ad333883f00cc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk1/poça 7-sheet.png using Guid(a6ee2159df374cd45ad333883f00cc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523cc223948812ce01972b4de4be2ec3') in 0.036950 seconds 
-  Import took 0.041285 seconds .
+  Time since last request: 18.627988 seconds.
+  path: Assets/Sprites/Game/Antibiotic/Chunk7/poca6.png
+  artifactKey: Guid(63212aed37a405b439b507d620a7de83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game/Antibiotic/Chunk7/poca6.png using Guid(63212aed37a405b439b507d620a7de83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005a3f92766cab8715e67252de231582') in 0.025912 seconds 
+  Import took 0.044013 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 52.775338 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd79df6938e70ae99d3397727634b94') in 0.012260 seconds 
-  Import took 0.017807 seconds .
+  Time since last request: 26.796471 seconds.
+  path: Assets/Prefabs/Chunks/Chunk (5).prefab
+  artifactKey: Guid(092200d70302e8b4b8383ffb133b1afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chunks/Chunk (5).prefab using Guid(092200d70302e8b4b8383ffb133b1afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25604147bb4232dd4e77a1a1c52762ee') in 0.029866 seconds 
+  Import took 0.047309 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.103455 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db13a6246bb4d011787aeeb6925acee8') in 0.009499 seconds 
-  Import took 0.014107 seconds .
+  Time since last request: 1.904693 seconds.
+  path: Assets/Prefabs/Chunks/Chunk (6) 1.prefab
+  artifactKey: Guid(09a32d97a66b02b4ca7c620b7fabf463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chunks/Chunk (6) 1.prefab using Guid(09a32d97a66b02b4ca7c620b7fabf463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7fb5a650f950eefe5b32665b511b821') in 0.017360 seconds 
+  Import took 0.034744 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.336375 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218f5fce1847fa691dc2eb124deb2d87') in 0.009510 seconds 
-  Import took 0.015420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 615.603435 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (0).prefab
-  artifactKey: Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (0).prefab using Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d25361a2bff69a3388c335c7497841') in 0.030567 seconds 
-  Import took 0.036249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1204.695601 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2
-  artifactKey: Guid(4ddf607708eba9f41ba1b75bbdad70c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2 using Guid(4ddf607708eba9f41ba1b75bbdad70c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809c1331e92934f6e4d35426c5c5e168') in 0.009261 seconds 
-  Import took 0.015706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.048980 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 1-sheet.png
-  artifactKey: Guid(79ba0ccc4c1f3e64fbaea0704edff152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 1-sheet.png using Guid(79ba0ccc4c1f3e64fbaea0704edff152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8487ca269114e0c5b4ee01dc1da6cbce') in 0.026619 seconds 
-  Import took 0.031016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.569251 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 2-sheet.png
-  artifactKey: Guid(5a47d406d46ea47428f44bf63b1c770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 2-sheet.png using Guid(5a47d406d46ea47428f44bf63b1c770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b043e1ecd0105fd5130a8c4d04ea5d6d') in 0.022047 seconds 
-  Import took 0.027138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.879217 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 2-sheet.png
-  artifactKey: Guid(5a47d406d46ea47428f44bf63b1c770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 2-sheet.png using Guid(5a47d406d46ea47428f44bf63b1c770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174c25b9357eab61d8ecbd7f6c69caf9') in 0.011942 seconds 
-  Import took 0.016747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.121578 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 1-sheet.png
-  artifactKey: Guid(79ba0ccc4c1f3e64fbaea0704edff152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 1-sheet.png using Guid(79ba0ccc4c1f3e64fbaea0704edff152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19732375ac438b27ab17c0fd3cf6569d') in 0.015319 seconds 
-  Import took 0.019539 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.212470 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 1-sheet.png
-  artifactKey: Guid(79ba0ccc4c1f3e64fbaea0704edff152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 1-sheet.png using Guid(79ba0ccc4c1f3e64fbaea0704edff152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a380ddf2f04fb145c2187f0c2abade91') in 0.041676 seconds 
-  Import took 0.045653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.126154 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 2-sheet.png
-  artifactKey: Guid(5a47d406d46ea47428f44bf63b1c770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 2-sheet.png using Guid(5a47d406d46ea47428f44bf63b1c770a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49aafd90de420f7c28e3716db741196f') in 0.033596 seconds 
-  Import took 0.038484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.327516 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 3-sheet.png
-  artifactKey: Guid(d53f63febe076c9429124d8c331455b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 3-sheet.png using Guid(d53f63febe076c9429124d8c331455b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9194ad0dae6d45f427537d8b9cf482ee') in 0.013915 seconds 
-  Import took 0.018860 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.304726 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 3-sheet.png
-  artifactKey: Guid(d53f63febe076c9429124d8c331455b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 3-sheet.png using Guid(d53f63febe076c9429124d8c331455b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5e0e9b14ffa102d4404f1e965d6be0') in 0.024381 seconds 
-  Import took 0.028392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.712559 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 4-sheet.png
-  artifactKey: Guid(44022e96ac38717478fd79c71e983804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 4-sheet.png using Guid(44022e96ac38717478fd79c71e983804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b00fdc257dbe56f929e81f2e5311d3') in 0.015029 seconds 
-  Import took 0.019894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.633378 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 4-sheet.png
-  artifactKey: Guid(44022e96ac38717478fd79c71e983804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 4-sheet.png using Guid(44022e96ac38717478fd79c71e983804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075343af4d5a9911d8c3c810b5cd46d3') in 0.021087 seconds 
-  Import took 0.025457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.379294 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (0).prefab
-  artifactKey: Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (0).prefab using Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c856356f3c77fcfa2b1e50ce2abb2ec6') in 0.095988 seconds 
-  Import took 0.100468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.347069 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (1).prefab
-  artifactKey: Guid(d37133f298f2e8046b307a16eedf658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (1).prefab using Guid(d37133f298f2e8046b307a16eedf658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb14b68f28a6f3f277c0eddacf2a0b0') in 0.038329 seconds 
-  Import took 0.042939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.287279 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 5-sheet.png
-  artifactKey: Guid(8dbdb5f4167fc854db15a1dc5c24951f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 5-sheet.png using Guid(8dbdb5f4167fc854db15a1dc5c24951f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fece99a3691acbb71d723b0836743558') in 0.017525 seconds 
-  Import took 0.022442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.027548 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk2/poça 5-sheet.png
-  artifactKey: Guid(8dbdb5f4167fc854db15a1dc5c24951f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk2/poça 5-sheet.png using Guid(8dbdb5f4167fc854db15a1dc5c24951f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2e6452c52067f3b37f957324570302') in 0.028958 seconds 
-  Import took 0.033922 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 964.155566 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (1).prefab
-  artifactKey: Guid(d37133f298f2e8046b307a16eedf658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (1).prefab using Guid(d37133f298f2e8046b307a16eedf658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bedddbd307873ef72a937047e09a259') in 0.030354 seconds 
-  Import took 0.036503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.448559 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (1) 1.prefab
-  artifactKey: Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (1) 1.prefab using Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706fee34cbea67760410e78f53bdeb79') in 0.039239 seconds 
-  Import took 0.044067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 92.919182 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (2).prefab
-  artifactKey: Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (2).prefab using Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9065148426b15a91c467ff817f3f5a4') in 0.022108 seconds 
-  Import took 0.027435 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.367066 seconds.
-  path: Assets/Prefabs/Chunks/Chunk.prefab
-  artifactKey: Guid(7f151cd294faa5c44a814ec5b975d910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk.prefab using Guid(7f151cd294faa5c44a814ec5b975d910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61519decb27633667e5be70e5a9094e1') in 0.039405 seconds 
-  Import took 0.044936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.403990 seconds.
-  path: Assets/Prefabs/Chunks/Chunk.prefab
-  artifactKey: Guid(7f151cd294faa5c44a814ec5b975d910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk.prefab using Guid(7f151cd294faa5c44a814ec5b975d910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc84820e36b8016a017af130b29df1d') in 0.021135 seconds 
-  Import took 0.026925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2116.341523 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3
-  artifactKey: Guid(ac1d67771faf2c6419c08e1ec509d7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3 using Guid(ac1d67771faf2c6419c08e1ec509d7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d4795a58dd76e4337a548c46b55794') in 0.007942 seconds 
-  Import took 0.014338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.576748 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png
-  artifactKey: Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png using Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '032119e22a523ee124a820877ba087ed') in 0.039421 seconds 
-  Import took 0.043505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.944240 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png
-  artifactKey: Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png using Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db6dbb132630db45ecf469bcb4127db') in 0.020690 seconds 
-  Import took 0.025160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.041132 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png
-  artifactKey: Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png using Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc17a021e23f898505b115cd928d48b') in 0.017245 seconds 
-  Import took 0.021453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.527991 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png
-  artifactKey: Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png using Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd1ca45875bc761df0d7ef82e42eb6d') in 0.020953 seconds 
-  Import took 0.025850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.109747 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png
-  artifactKey: Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png using Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5c488ab074846385c46734ba688683') in 0.014321 seconds 
-  Import took 0.018752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.932674 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png
-  artifactKey: Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png using Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907919e4ff9e788da3770c816ac0bcce') in 0.015067 seconds 
-  Import took 0.019557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.368549 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png
-  artifactKey: Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca1.png using Guid(5baff611b2e5dc446b0c61eabe754a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf669ce9ea94d5d3d5b270bdc56a7f9d') in 0.033727 seconds 
-  Import took 0.037786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.290331 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png
-  artifactKey: Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca2.png using Guid(1bdc0bf0512319743a497ccfc7ab9a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b50248e908c1a7ff3d66effdce8936e') in 0.025026 seconds 
-  Import took 0.029071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.240403 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca3.png
-  artifactKey: Guid(1b96b7124c941e544873ea731e26519e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca3.png using Guid(1b96b7124c941e544873ea731e26519e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7606371c2e64737086cd86bd66ee74ef') in 0.018681 seconds 
-  Import took 0.024132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.394465 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca3.png
-  artifactKey: Guid(1b96b7124c941e544873ea731e26519e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca3.png using Guid(1b96b7124c941e544873ea731e26519e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e69699ef41d15a9cb8608a6496ba26a') in 0.024443 seconds 
-  Import took 0.029249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.600432 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca4.png
-  artifactKey: Guid(dbe42635300070442b1d839362ce06a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca4.png using Guid(dbe42635300070442b1d839362ce06a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20693df7aa39ddd93db130e50a8f6d64') in 0.016352 seconds 
-  Import took 0.020431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.886113 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca4.png
-  artifactKey: Guid(dbe42635300070442b1d839362ce06a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca4.png using Guid(dbe42635300070442b1d839362ce06a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17f84633b13523df31cfff5e8366309') in 0.027741 seconds 
-  Import took 0.031894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.432043 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca5.png
-  artifactKey: Guid(f2f6b6592b48b1640b8929138dd60777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca5.png using Guid(f2f6b6592b48b1640b8929138dd60777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93790c5730e229bdd5c7b0847b255c94') in 0.019529 seconds 
-  Import took 0.023666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.176351 seconds.
-  path: Assets/Sprites/Game/Antibiotic/Chunk3/poca5.png
-  artifactKey: Guid(f2f6b6592b48b1640b8929138dd60777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Game/Antibiotic/Chunk3/poca5.png using Guid(f2f6b6592b48b1640b8929138dd60777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626e0a27b788ace281e59fea7e2c84bb') in 0.023054 seconds 
-  Import took 0.027193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.679829 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff13e486fe1164da4029c2514a6d9f06') in 0.016139 seconds 
-  Import took 0.021428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.244186 seconds.
-  path: Assets/Prefabs/Chunks/Antibiotic.prefab
-  artifactKey: Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Antibiotic.prefab using Guid(a452cbaf585ae5e4787ce155167c3100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca83bdcc390c8c2e85db39341d06e958') in 0.015260 seconds 
-  Import took 0.020673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.389883 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (0).prefab
-  artifactKey: Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (0).prefab using Guid(2c2e61e95d9ea414ba10a07806f56499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0557b396bf9ab409817e716d8843137f') in 0.036484 seconds 
-  Import took 0.041021 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.759223 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (1).prefab
-  artifactKey: Guid(d37133f298f2e8046b307a16eedf658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (1).prefab using Guid(d37133f298f2e8046b307a16eedf658e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04f8a2e08fe380144029a9b088fc6ee') in 0.016944 seconds 
-  Import took 0.022174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.135546 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (2).prefab
-  artifactKey: Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (2).prefab using Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca38f40d4bf80d9c3bf82949682c4cc') in 0.020233 seconds 
-  Import took 0.026323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 925.697305 seconds.
-  path: Assets/Prefabs/Chunks/Chunk (2).prefab
-  artifactKey: Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Chunks/Chunk (2).prefab using Guid(ef94f169a37e9c34e860c4467e87d661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac544411c5fb89b94caf2e19db966c3c') in 0.034530 seconds 
-  Import took 0.039788 seconds .
+  Time since last request: 6.370882 seconds.
+  path: Assets/Prefabs/Chunks/Chunk (7).prefab
+  artifactKey: Guid(09a32d97a66b02b4ca7c620b7fabf463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chunks/Chunk (7).prefab using Guid(09a32d97a66b02b4ca7c620b7fabf463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b83b91f70f80a089958ced17478709') in 0.017475 seconds 
+  Import took 0.022681 seconds .
 
