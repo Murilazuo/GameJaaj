@@ -42,6 +42,10 @@ public class Upgrade : MonoBehaviour
         playerManager.maxLife += lifeToAdd;
         playerManager.SetLife(lifeToAdd);
         moveSkate.rotationForce -= rotationSpeedToSubtract;
+        if(moveSkate.rotationForce < 1)
+        {
+            moveSkate.rotationForce = 1;
+        }
         soundManager.PlaySound("Heal");
     }
     public void UpgradeControl()
@@ -67,6 +71,7 @@ public class Upgrade : MonoBehaviour
     {
         LifeOrbController.AddPercentage(orbPercentageToAdd);
         button.interactable = false;
+        button.gameObject.SetActive(false);
     }
     public void ResetPlayerPoint()
     {
