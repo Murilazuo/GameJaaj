@@ -17,6 +17,13 @@ public class PlayerCollision : MonoBehaviour
         moveSkate = playerManager.GetComponent<MoveSkate>();
         soundManager = SoundManager.soundManager;
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Limit"))
+        {
+            moveSkate.speed = 0;
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         switch (collision.tag)

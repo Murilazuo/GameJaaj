@@ -5,7 +5,7 @@ public class MoveSkate : MonoBehaviour
     Rigidbody2D rig;
     Animator anim;
     [SerializeField] internal float accereration, deaccereration, rotationForce, maxSpeed;
-    private float speed;
+    internal float speed;
     bool jump;
     public bool inAntibiotic;
     SoundManager soundManager;
