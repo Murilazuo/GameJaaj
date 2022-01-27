@@ -4250,6 +4250,26 @@ PrefabInstance:
       propertyPath: pointsUi
       value: 
       objectReference: {fileID: 418144703}
+    - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: pointsToNextUpgrade.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: pointsToNextUpgrade.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: pointsToNextUpgrade.Array.data[1]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: pointsToNextUpgrade.Array.data[2]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: pointsToNextUpgrade.Array.data[3]
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 8023140157958296991, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: m_RootOrder
       value: 2

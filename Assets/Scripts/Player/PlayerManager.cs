@@ -55,9 +55,13 @@ public class PlayerManager : MonoBehaviour
             {
                 points += damage * -1;
             }
+
             if(level > pointsToNextUpgrade.Length-1)
             {
-                if (points >= pointsToNextUpgrade[pointsToNextUpgrade.Length]);
+                if (points >= pointsToNextUpgrade[pointsToNextUpgrade.Length])
+                {
+                    Upgrade();
+                }
             }
             else if (points >= pointsToNextUpgrade[level])
             {
