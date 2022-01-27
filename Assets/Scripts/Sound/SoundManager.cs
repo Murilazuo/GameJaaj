@@ -55,7 +55,6 @@ public class SoundManager : MonoBehaviour
     {
         Sound sound = Array.Find(sounds, s => s.name == name);
 
-        print(sound.name);
         sound.audioSource.Play();
     }
     public void StopSound(string name)
