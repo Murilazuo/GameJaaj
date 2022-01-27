@@ -21,7 +21,7 @@ public class ShowData : MonoBehaviour
             textBeforeTimeOrb + "\n" +
             PlayerManager.instance.GetComponent<PlayerCollision>().timeOrb.ToString() + "\n\n" +
             textBeforeLevel + "\n" +
-            PlayerManager.instance.level.ToString();
+            FindObjectOfType<DisplayLevel>().GetLevel();
         }
     }
 }

@@ -14,4 +14,8 @@ public class DisplayLevel : MonoBehaviour
         level++;
         text.text = level.ToString();
     }
+    public string GetLevel()
+    {
+        return level.ToString();
+    }
 }
