@@ -47,5 +47,6 @@ MonoBehaviour:
   chunksToSpawn:
   - {fileID: 1933782295695109183, guid: 2c2e61e95d9ea414ba10a07806f56499, type: 3}
   - {fileID: 1933782295695109183, guid: d37133f298f2e8046b307a16eedf658e, type: 3}
+  - {fileID: 1933782295695109183, guid: ef94f169a37e9c34e860c4467e87d661, type: 3}
   chunk: {fileID: 0}
   playerTransform: {fileID: 0}

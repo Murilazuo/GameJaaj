@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 854686675927917492}
   - component: {fileID: 6726948540373750978}
-  - component: {fileID: 8280291636842332999}
   - component: {fileID: -7417110345004153441}
+  - component: {fileID: 8787064379794658478}
   m_Layer: 0
   m_Name: Antibiotic
   m_TagString: Antibiotic
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8963294797353979459}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.9376, y: -18.5848, z: 0}
-  m_LocalScale: {x: 2.7951, y: 1.8704, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 2edd859ab577b9b4ea810d5acee36e38, type: 3}
-  m_Color: {r: 1, g: 0.78079355, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,8 +84,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8280291636842332999
-BoxCollider2D:
+--- !u!114 &-7417110345004153441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8963294797353979459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd2bd0ad25c2db458283c7a4eca2f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorLevel:
+  - {r: 1, g: 0.7405458, b: 0, a: 0.29803923}
+  - {r: 1, g: 0.7405458, b: 0, a: 0.59607846}
+  - {r: 1, g: 0.7405458, b: 0, a: 0.92941177}
+  damages:
+  - 0.3
+  - 0.5
+  - 0.9
+  damage: 0
+--- !u!60 &8787064379794658478
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,27 +128,9 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &-7417110345004153441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8963294797353979459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fd2bd0ad25c2db458283c7a4eca2f37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorLevel:
-  - {r: 1, g: 0.7405458, b: 0, a: 0.29803923}
-  - {r: 1, g: 0.7405458, b: 0, a: 0.59607846}
-  - {r: 1, g: 0.7405458, b: 0, a: 0.92941177}
-  damages:
-  - 0.1
-  - 0.2
-  - 0.5
-  damage: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.5, y: 0.5}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.5, y: 0.5}
