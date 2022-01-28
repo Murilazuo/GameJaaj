@@ -12,6 +12,9 @@ public class PlayerCollision : MonoBehaviour
 
     SoundManager soundManager;
     public int lifeOrb, timeOrb;
+
+    [SerializeField] ParticleSystem takeDamage;
+
     private void Start()
     {
         playerManager = GetComponent<PlayerManager>();
@@ -62,6 +65,7 @@ public class PlayerCollision : MonoBehaviour
                 break;
             case "Antibiotic":
                 moveSkate.inAntibiotic = true;
+                takeDamage.Play();
                 barAnim.SetBool("Evolve", true);
                 break;
         }
@@ -74,6 +78,7 @@ public class PlayerCollision : MonoBehaviour
             case "Antibiotic":
                 moveSkate.inAntibiotic = false;
                 barAnim.SetBool("Evolve", false);
+                takeDamage.Stop(); 
                 soundManager.StopSound("WalkAntibiotic");
                 break;
         }

@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
 
     DisplayLevel displayLevel;
 
+
     private void Awake()
     {
         instance = this;
@@ -54,6 +55,7 @@ public class PlayerManager : MonoBehaviour
             if (damage < 0)
             {
                 points += damage * -1;
+                
             }
 
             if(level > pointsToNextUpgrade.Length-1)

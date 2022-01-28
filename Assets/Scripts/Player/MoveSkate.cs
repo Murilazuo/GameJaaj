@@ -9,6 +9,7 @@ public class MoveSkate : MonoBehaviour
     bool jump;
     public bool inAntibiotic;
     SoundManager soundManager;
+    [SerializeField] ParticleSystem breakParticle;
     private void Awake()
     {
         try{
@@ -89,11 +90,20 @@ public class MoveSkate : MonoBehaviour
             if (speed > 0 && (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.LeftShift))))
             {
                 speed -= brake;
+                if (breakParticle.isStopped)
+                {
+                    breakParticle.Play();
+                }
+
                 //Debug.Log("braking:" + rotationForce);
                 if (speed < 0)
                 {
                     speed -= brake * 6;
                 }
+            }
+            else if (breakParticle.isPlaying)
+            {
+                breakParticle.Stop();
             }
 
             /*else if (speed > 0.3f)

@@ -658,7 +658,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 0.384
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -4442,7 +4442,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 134638384, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1652600559, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: ShapeModule.type
@@ -4496,6 +4496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8023140157958296984, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: takeDamage
+      value: 
+      objectReference: {fileID: 8023140159231827016}
     - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: lifeUi
       value: 
@@ -4508,6 +4512,10 @@ PrefabInstance:
       propertyPath: pointsUi
       value: 
       objectReference: {fileID: 418144703}
+    - target: {fileID: 8023140157958296986, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: breakParticle
+      value: 
+      objectReference: {fileID: 8023140159231827015}
     - target: {fileID: 8023140157958296986, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: rotationForce
       value: 8
@@ -4562,3 +4570,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+--- !u!198 &8023140159231827015 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 134638387, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+  m_PrefabInstance: {fileID: 8023140159231827014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8023140159231827016 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1652600559, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+  m_PrefabInstance: {fileID: 8023140159231827014}
+  m_PrefabAsset: {fileID: 0}
