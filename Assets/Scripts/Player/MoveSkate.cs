@@ -9,6 +9,14 @@ public class MoveSkate : MonoBehaviour
     bool jump;
     public bool inAntibiotic;
     SoundManager soundManager;
+    private void Awake()
+    {
+        try{
+        }
+        catch
+        {
+        }
+    }
     void Start()
     {
         soundManager = SoundManager.soundManager;
@@ -27,85 +35,96 @@ public class MoveSkate : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float rotationSpeedMod = 0;
+        try
+        {
+            float rotationSpeedMod = 0;
 
-        if(speed > maxSpeed / 5)
-        {
-            rotationSpeedMod = ((((speed / maxSpeed) - 1f) * -1f) * 0.8f) + 0.2f;
-        } 
-        else
-        {
-            rotationSpeedMod = ((((-speed / maxSpeed) - 1f) * -1f) * 0.8f) - 0.2f;
-        }
-
-        if (speed > -0.5 && speed < 0.5)
-        {
-            rotationSpeedMod = 0;
-            
-           if (soundManager.GetSound("WalkAntibiotic").isPlaying)
-           {
-                soundManager.StopSound("WalkAntibiotic");
-           }
-        }else 
-        {
-            if (inAntibiotic && !soundManager.GetSound("WalkAntibiotic").isPlaying)
+            if (speed > maxSpeed / 5)
             {
-                soundManager.PlaySound("WalkAntibiotic");
+                rotationSpeedMod = ((((speed / maxSpeed) - 1f) * -1f) * 0.8f) + 0.2f;
             }
-        }
-
-        if (speed < 0)
-        {
-            rotationSpeedMod *= -1;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(new Vector3(0,0,-rotationForce * rotationSpeedMod));
-        }else if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(new Vector3(0, 0,rotationForce * rotationSpeedMod));
-        }
-
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            speed += accereration;
-
-        }
-                
-        if (speed>0 && (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.LeftShift))))
-        {
-            speed -= brake;
-            Debug.Log("braking:" + rotationForce);
-            if (speed < 0) 
+            else
             {
-                speed -= brake * 6;
+                rotationSpeedMod = ((((-speed / maxSpeed) - 1f) * -1f) * 0.8f) - 0.2f;
             }
+
+            if (speed > -0.5 && speed < 0.5)
+            {
+                rotationSpeedMod = 0;
+
+                if (soundManager.GetSound("WalkAntibiotic").isPlaying)
+                {
+                    soundManager.StopSound("WalkAntibiotic");
+                }
+            }
+            else
+            {
+                if (inAntibiotic && !soundManager.GetSound("WalkAntibiotic").isPlaying)
+                {
+                    soundManager.PlaySound("WalkAntibiotic");
+                }
+            }
+
+            if (speed < 0)
+            {
+                rotationSpeedMod *= -1;
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(new Vector3(0, 0, -rotationForce * rotationSpeedMod));
+            }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(new Vector3(0, 0, rotationForce * rotationSpeedMod));
+            }
+
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                speed += accereration;
+
+            }
+
+            if (speed > 0 && (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.LeftShift))))
+            {
+                speed -= brake;
+                //Debug.Log("braking:" + rotationForce);
+                if (speed < 0)
+                {
+                    speed -= brake * 6;
+                }
+            }
+
+            /*else if (speed > 0.3f)
+            {
+                speed -= deaccereration;
+            }else if (speed < -0.3f)
+            {
+                speed += deaccereration;
+            }
+            else
+            {
+                speed = 0;   
+            }*/
+
+
+            if (speed > maxSpeed)
+            {
+                speed = maxSpeed;
+            }
+            else if (speed < -(maxSpeed / 2))
+            {
+                speed = -(maxSpeed / 2);
+            }
+
+            rig.velocity = transform.up * speed;
+        }
+        catch
+        {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
 
-        /*else if (speed > 0.3f)
-        {
-            speed -= deaccereration;
-        }else if (speed < -0.3f)
-        {
-            speed += deaccereration;
-        }
-        else
-        {
-            speed = 0;   
-        }*/
-
-
-        if (speed > maxSpeed)
-        {
-            speed = maxSpeed;
-        }else if (speed < -(maxSpeed / 2))
-        {
-            speed = -(maxSpeed / 2);
-        }
-
-        rig.velocity = transform.up * speed;
     }
 
     void Jump()

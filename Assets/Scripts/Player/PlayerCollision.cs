@@ -35,23 +35,26 @@ public class PlayerCollision : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Orb orb = null;
 
         switch (collision.tag)
         {
             case "LifeOrb":
                 soundManager.PlaySound("Bite");
                 soundManager.PlaySound("Heal");
+                orb = collision.GetComponent<Orb>();
 
-                playerManager.SetLife(collision.GetComponent<Orb>().lifeToAdd);
-                collision.gameObject.SetActive(false);
+                orb.Collect();
+                playerManager.SetLife(orb.lifeToAdd);
                 lifeOrb++;
                 break;
             case "TimeOrb":
                 soundManager.PlaySound("Bite");
                 soundManager.PlaySound("GainTime");
 
-                gameManager.time += collision.GetComponent<Orb>().lifeToAdd;
-                collision.gameObject.SetActive(false);
+                orb = collision.GetComponent<Orb>();
+                gameManager.time += orb.lifeToAdd;
+                orb.Collect();
                 timeOrb++;
                 break;
             case "Antibiotic":

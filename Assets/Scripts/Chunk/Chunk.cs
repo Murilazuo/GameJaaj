@@ -36,7 +36,10 @@ public class Chunk : MonoBehaviour
     void SpawnChunk()
     {
         chunkSpawn = true;
-        chunk = Instantiate(chunksToSpawn[Random.Range(0, chunksToSpawn.Length - 1)], new Vector2( 
+        int chunkIndex = Random.Range(0, chunksToSpawn.Length);
+        if (chunkIndex == chunksToSpawn.Length) chunkIndex--;
+
+        chunk = Instantiate(chunksToSpawn[chunkIndex], new Vector2( 
         transform.position.x-10,transform.position.y+10), Quaternion.identity, transform);
     }
     Vector2 GetCenter()
