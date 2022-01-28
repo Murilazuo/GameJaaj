@@ -48,5 +48,11 @@ MonoBehaviour:
   - {fileID: 1933782295695109183, guid: 2c2e61e95d9ea414ba10a07806f56499, type: 3}
   - {fileID: 1933782295695109183, guid: d37133f298f2e8046b307a16eedf658e, type: 3}
   - {fileID: 1933782295695109183, guid: ef94f169a37e9c34e860c4467e87d661, type: 3}
+  - {fileID: 1933782295695109183, guid: cd329784beb257a4aa6e38122202ca61, type: 3}
+  - {fileID: 1933782295695109183, guid: b238894c8bd2dc041853ec448d61e14e, type: 3}
+  - {fileID: 1933782295695109183, guid: 092200d70302e8b4b8383ffb133b1afc, type: 3}
+  - {fileID: 1933782295695109183, guid: e924c5bf48016304980a8bc83587b1ee, type: 3}
+  - {fileID: 1933782295695109183, guid: 09a32d97a66b02b4ca7c620b7fabf463, type: 3}
+  - {fileID: 1933782295695109183, guid: 42e86bfe2615e3544ba8df1d1655ece2, type: 3}
   chunk: {fileID: 0}
   playerTransform: {fileID: 0}
