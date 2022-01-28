@@ -2306,6 +2306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Antibiotic (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8963294797353979459, guid: a452cbaf585ae5e4787ce155167c3100, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a452cbaf585ae5e4787ce155167c3100, type: 3}
 --- !u!4 &7812782012854858883 stripped
