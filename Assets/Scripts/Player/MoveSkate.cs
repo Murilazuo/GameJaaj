@@ -4,7 +4,7 @@ public class MoveSkate : MonoBehaviour
 {
     Rigidbody2D rig;
     Animator anim;
-    [SerializeField] internal float accereration, deaccereration, rotationForce, maxSpeed;
+    [SerializeField] internal float accereration, deaccereration, brake,rotationForce, maxSpeed;
     internal float speed;
     bool jump;
     public bool inAntibiotic;
@@ -71,10 +71,20 @@ public class MoveSkate : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             speed += accereration;
-        }else if (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.LeftShift)))
+
+        }
+                
+        if (speed>0 && (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.LeftShift))))
         {
-            speed -= accereration;
-        }else if (speed > 0.3f)
+            speed -= brake;
+            Debug.Log("braking:" + rotationForce);
+            if (speed < 0) 
+            {
+                speed -= brake * 6;
+            }
+        }
+
+        /*else if (speed > 0.3f)
         {
             speed -= deaccereration;
         }else if (speed < -0.3f)
@@ -84,7 +94,7 @@ public class MoveSkate : MonoBehaviour
         else
         {
             speed = 0;   
-        }
+        }*/
 
 
         if (speed > maxSpeed)
