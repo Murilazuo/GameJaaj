@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ScoreCounter : MonoBehaviour
 {
-    [SerializeField] float timeToCalculate;
     [SerializeField] float scorePerUnit;
     Vector2 lastPosition;
     
@@ -19,7 +18,7 @@ public class ScoreCounter : MonoBehaviour
         while (inGame)
         {
             lastPosition = transform.position;
-            yield return new WaitForSeconds(timeToCalculate);
+            yield return new WaitForFixedUpdate();
             score += Vector2.Distance(transform.position, lastPosition) * scorePerUnit;
         }
     }
