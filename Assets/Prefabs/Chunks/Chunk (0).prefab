@@ -556,6 +556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 8787064379794658478, guid: a452cbaf585ae5e4787ce155167c3100, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a452cbaf585ae5e4787ce155167c3100, type: 3}
 --- !u!1 &6916373208783195830 stripped
 GameObject:
@@ -577,7 +578,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
