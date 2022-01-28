@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         gameOver.SetActive(true);
         Time.timeScale = 0;
 
+        soundManager.PlaySound("EndTime");
         soundManager.StopSound("Walk");
         soundManager.StopSound("WalkAntibiotic");
 
