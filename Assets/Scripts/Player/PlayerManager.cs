@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float life;
     public float points = 0;
     [SerializeField] private float[] pointsToNextUpgrade;
+    float nextUpgrade;
     public float maxLife;
     public static PlayerManager instance;
     public BarUi lifeUi, pointsUi;
@@ -30,6 +31,7 @@ public class PlayerManager : MonoBehaviour
     }
     private void Start()
     {
+        nextUpgrade = pointsToNextUpgrade[0];
         life = maxLife;
         level = 0;
         displayLevel = FindObjectOfType<DisplayLevel>();
@@ -58,40 +60,33 @@ public class PlayerManager : MonoBehaviour
                 
             }
 
-            if(level > pointsToNextUpgrade.Length-1)
-            {
-                if (points >= pointsToNextUpgrade[pointsToNextUpgrade.Length])
-                {
-                    Upgrade();
-                }
-            }
-            else if (points >= pointsToNextUpgrade[level])
+
+            if(points >= nextUpgrade)
             {
                 Upgrade();
-            }
+            }   
         }
-        float maxPoints = pointsToNextUpgrade[pointsToNextUpgrade.Length - 1];
-        if(level < pointsToNextUpgrade.Length)
-        {
-            maxPoints = pointsToNextUpgrade[level];
-        }
-        pointsUi.SetBar(points, maxPoints);
+        
+        pointsUi.SetBar(points, nextUpgrade);
     }
 
     private void Upgrade()
     {
-        if(level >= orbByLevel.Length)
+        level++;
+
+        if(level <= orbByLevel.Length)
         {
             LifeOrbController.AddPercentage(orbByLevel[level]);
         }
-
+        points = 0;
 
         displayLevel.UpdateLevel();
         soundManager.StopSound("WalkAntibiotic");
         Time.timeScale = 0;
+        nextUpgrade = pointsToNextUpgrade[level];
+        print(nextUpgrade);
         OnUpgrade?.Invoke();
         canUpgrade = true;
-        points = pointsToNextUpgrade[level];
         soundManager.PlaySound("Evolve");
     }
 
