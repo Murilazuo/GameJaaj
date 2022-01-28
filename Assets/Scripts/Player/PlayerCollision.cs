@@ -8,6 +8,8 @@ public class PlayerCollision : MonoBehaviour
 
     GameManager gameManager;
 
+    Animator barAnim;
+
     SoundManager soundManager;
     public int lifeOrb, timeOrb;
     private void Start()
@@ -16,6 +18,7 @@ public class PlayerCollision : MonoBehaviour
         gameManager = GameManager.instance;
         moveSkate = playerManager.GetComponent<MoveSkate>();
         soundManager = SoundManager.soundManager;
+        barAnim = playerManager.pointsUi.GetComponent<Animator>();
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -59,6 +62,7 @@ public class PlayerCollision : MonoBehaviour
                 break;
             case "Antibiotic":
                 moveSkate.inAntibiotic = true;
+                barAnim.SetBool("Evolve", true);
                 break;
         }
     }
@@ -69,6 +73,7 @@ public class PlayerCollision : MonoBehaviour
         {
             case "Antibiotic":
                 moveSkate.inAntibiotic = false;
+                barAnim.SetBool("Evolve", false);
                 soundManager.StopSound("WalkAntibiotic");
                 break;
         }

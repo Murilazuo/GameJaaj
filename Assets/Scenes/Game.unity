@@ -594,6 +594,7 @@ GameObject:
   - component: {fileID: 418144705}
   - component: {fileID: 418144704}
   - component: {fileID: 418144703}
+  - component: {fileID: 418144706}
   m_Layer: 5
   m_Name: EvoFill
   m_TagString: Untagged
@@ -670,6 +671,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418144701}
   m_CullTransparentMesh: 1
+--- !u!95 &418144706
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418144701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d669ad756a56d946a542aa86f9d6ebb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &491591646
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,7 +4462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1652600559, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1652600559, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: InitialModule.startSpeed.scalar

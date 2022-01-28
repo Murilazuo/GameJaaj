@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float[] pointsToNextUpgrade;
     public float maxLife;
     public static PlayerManager instance;
-    [SerializeField] BarUi lifeUi, pointsUi;
+    public BarUi lifeUi, pointsUi;
     public int level;
     public bool canUpgrade = false;
     SoundManager soundManager;

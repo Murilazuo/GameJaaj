@@ -5,6 +5,7 @@ public class BarUi : MonoBehaviour
 {
     Image barImage;
     
+    
     void Start()
     {
         barImage = GetComponent<Image>();
