@@ -49,7 +49,7 @@ MonoBehaviour:
     volume: 0.249
     pitch: 1
     loop: 1
-    clip: {fileID: 8300000, guid: ee38ddeacf2867944818a68f2e853a83, type: 3}
+    clip: {fileID: 8300000, guid: 4b142433c2868f9489ecfd7021f462cd, type: 3}
     audioSource: {fileID: 0}
   - name: Walk
     volume: 1
