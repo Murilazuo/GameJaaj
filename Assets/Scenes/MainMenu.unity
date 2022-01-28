@@ -2760,6 +2760,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3515945899500499578, guid: 3deeb7604c66ce040b35f32fd7931ab3, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 413e9a9e18817584788434d5057b5a62, type: 3}
+    - target: {fileID: 3515945899500499578, guid: 3deeb7604c66ce040b35f32fd7931ab3, type: 3}
       propertyPath: sounds.Array.data[1].name
       value: WalkAntibiotic
       objectReference: {fileID: 0}
