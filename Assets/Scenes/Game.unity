@@ -4261,6 +4261,7 @@ GameObject:
   - component: {fileID: 2062007390}
   - component: {fileID: 2062007392}
   - component: {fileID: 2062007391}
+  - component: {fileID: 2062007393}
   m_Layer: 5
   m_Name: EvoBackGround
   m_TagString: Untagged
@@ -4309,7 +4310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8426135e3f6fe4c4a986602efce68053, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7eb3627c03416584f94c86c173363823, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4327,6 +4328,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062007389}
   m_CullTransparentMesh: 1
+--- !u!95 &2062007393
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062007389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7a82aec262d3b443ad02550cbe3fa9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2128665332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4620,6 +4640,10 @@ PrefabInstance:
       propertyPath: takeDamage
       value: 
       objectReference: {fileID: 8023140159231827016}
+    - target: {fileID: 8023140157958296984, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
+      propertyPath: barBackGroundAnim
+      value: 
+      objectReference: {fileID: 2062007393}
     - target: {fileID: 8023140157958296985, guid: 9e7f9246a61ceb0438cf0675bac74ea1, type: 3}
       propertyPath: lifeUi
       value: 

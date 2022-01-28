@@ -74,7 +74,7 @@ public class PlayerManager : MonoBehaviour
     {
         level++;
 
-        if(level <= orbByLevel.Length)
+        if(level < orbByLevel.Length)
         {
             LifeOrbController.AddPercentage(orbByLevel[level]);
         }
@@ -83,7 +83,10 @@ public class PlayerManager : MonoBehaviour
         displayLevel.UpdateLevel();
         soundManager.StopSound("WalkAntibiotic");
         Time.timeScale = 0;
-        nextUpgrade = pointsToNextUpgrade[level];
+        if(level < pointsToNextUpgrade.Length)
+        {
+            nextUpgrade = pointsToNextUpgrade[level];
+        }
         print(nextUpgrade);
         OnUpgrade?.Invoke();
         canUpgrade = true;
