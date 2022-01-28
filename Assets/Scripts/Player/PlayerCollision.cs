@@ -66,6 +66,7 @@ public class PlayerCollision : MonoBehaviour
         {
             case "Antibiotic":
                 moveSkate.inAntibiotic = false;
+                soundManager.StopSound("WalkAntibiotic");
                 break;
         }
     }

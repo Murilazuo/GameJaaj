@@ -90,7 +90,6 @@ public class PlayerManager : MonoBehaviour
         canUpgrade = true;
         points = pointsToNextUpgrade[level];
         soundManager.PlaySound("Evolve");
-        soundManager.StopSound("Walk");
         soundManager.StopSound("WalkAntibiotic");
     }
 
