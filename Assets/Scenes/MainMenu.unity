@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 1758570603}
   - component: {fileID: 1758570602}
   m_Layer: 5
-  m_Name: CreditosProgramacao (1)
+  m_Name: CreditosMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2137,9 +2137,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Sounds & Music
+  m_Text: 'Music
 
-    Yaare'
+    Visager'
 --- !u!222 &1758570603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2604,7 +2604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Programming
+  m_Text: 'Programming & sfx
 
     Murilo da Rosa Bezerra'
 --- !u!222 &2083876676
