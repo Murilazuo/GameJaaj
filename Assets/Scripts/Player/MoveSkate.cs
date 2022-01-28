@@ -71,7 +71,7 @@ public class MoveSkate : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             speed += accereration;
-        }else if (Input.GetKey(KeyCode.S))
+        }else if (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.LeftShift)))
         {
             speed -= accereration;
         }else if (speed > 0.3f)
