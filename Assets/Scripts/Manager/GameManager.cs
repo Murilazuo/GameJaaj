@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
         instance = this;
         soundManager = SoundManager.soundManager;
     }
+    private void OnDestroy()
+    {
+        soundManager.StopSound("Music");
+    }
     private void Start()
     {
         try

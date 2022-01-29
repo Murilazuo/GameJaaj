@@ -19,6 +19,7 @@ public class SoundManager : MonoBehaviour
             Destroy(this);
         }
     }
+    
     void Start()
     {
         foreach(Sound s in sounds)
@@ -31,10 +32,7 @@ public class SoundManager : MonoBehaviour
 
             s.audioSource.clip = s.clip;
         }
-        StopSound("Music");
-        StopSound("MusicMenu");
 
-        PlaySound("MusicMenu");
     }
     public void SetVolumeFx(Slider slider)
     {
