@@ -10,6 +10,7 @@ public class MoveSkate : MonoBehaviour
     public bool inAntibiotic;
     SoundManager soundManager;
     [SerializeField] ParticleSystem breakParticle;
+    PlayerManager playerManager;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class MoveSkate : MonoBehaviour
         
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        playerManager = PlayerManager.instance;
     }
 
     private void Update()
@@ -145,10 +147,32 @@ public class MoveSkate : MonoBehaviour
     void Jump()
     {
         jump = true;
+        anim.speed = 1;
         anim.SetTrigger("Jump");
     }
     void EndJump()
     {
         jump = false;
+        int levelId = 1;
+        switch (playerManager.level)
+        {
+            case 3:
+            case 4:
+                levelId = 2;
+                break;
+            case 5:
+            case 6:
+                levelId = 2;
+                break;
+            case 7:
+            case 8:
+                levelId = 2;
+                break;
+            case 9:
+            case 10:
+                levelId = 2;
+                break;
+        }
+        anim.SetInteger("Level", levelId);
     }
 }

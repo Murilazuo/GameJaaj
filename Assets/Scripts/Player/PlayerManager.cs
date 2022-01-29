@@ -74,7 +74,6 @@ public class PlayerManager : MonoBehaviour
     private void Upgrade()
     {
         level++;
-        print(level);
         int levelId = 1;
         switch (level)
         {
