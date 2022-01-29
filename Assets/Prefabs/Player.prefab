@@ -9633,7 +9633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5921920696242465337
 Transform:
   m_ObjectHideFlags: 0
@@ -9900,8 +9900,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToAdd: 0
+  barBackGroundAnim: {fileID: 0}
   lifeOrb: 0
   timeOrb: 0
+  takeDamage: {fileID: 0}
 --- !u!114 &8023140157958296985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9946,6 +9948,7 @@ MonoBehaviour:
   rotationForce: 8
   maxSpeed: 15
   inAntibiotic: 0
+  breakParticle: {fileID: 0}
 --- !u!70 &8023140157958296989
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

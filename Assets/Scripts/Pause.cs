@@ -16,7 +16,8 @@ public class Pause : MonoBehaviour
             {
                 UnPause();
             }
-            else{
+            else if(Time.timeScale == 1){
+
                 PauseGame();
             }
         }
