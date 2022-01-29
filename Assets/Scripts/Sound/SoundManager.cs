@@ -21,8 +21,6 @@ public class SoundManager : MonoBehaviour
     }
     void Start()
     {
-        
-
         foreach(Sound s in sounds)
         {
             s.audioSource = gameObject.AddComponent<AudioSource>();
@@ -33,6 +31,8 @@ public class SoundManager : MonoBehaviour
 
             s.audioSource.clip = s.clip;
         }
+        StopSound("Music");
+        StopSound("MusicMenu");
 
         PlaySound("MusicMenu");
     }
@@ -40,7 +40,7 @@ public class SoundManager : MonoBehaviour
     {
         foreach(Sound s in sounds)
         {
-            if(s.name != "Music")
+            if(s.name != "Music" && s.name != "MusicMenu")
             {
                 s.audioSource.volume = s.volume * slider.value;
             }
@@ -48,8 +48,12 @@ public class SoundManager : MonoBehaviour
     }
     public void SetVolumeMusic(Slider slider)
     {
+        Sound sound1 = Array.Find(sounds, s => s.name == "MusicMenu");
+        sound1.audioSource.volume = sound1.volume * slider.value;
+
         Sound sound = Array.Find(sounds, s => s.name == "Music");
         sound.audioSource.volume = sound.volume * slider.value;
+
     }
     public void PlaySound(string name)
     {
