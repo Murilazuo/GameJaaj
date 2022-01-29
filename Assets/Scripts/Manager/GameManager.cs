@@ -15,6 +15,18 @@ public class GameManager : MonoBehaviour
         instance = this;
         soundManager = SoundManager.soundManager;
     }
+    private void Start()
+    {
+        try
+        {
+            soundManager.StopSound("MusicMenu");
+            soundManager.PlaySound("Music");
+        }
+        catch
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        }
+    }
     private void FixedUpdate()
     {
         if(time <= 0)

@@ -10,18 +10,11 @@ public class MoveSkate : MonoBehaviour
     public bool inAntibiotic;
     SoundManager soundManager;
     [SerializeField] ParticleSystem breakParticle;
-    private void Awake()
-    {
-        try{
-        }
-        catch
-        {
-        }
-    }
+
     void Start()
     {
         soundManager = SoundManager.soundManager;
-
+        
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -128,11 +121,23 @@ public class MoveSkate : MonoBehaviour
                 speed = -(maxSpeed / 2);
             }
 
+            if(!jump)
+            {
+                if(speed > 0)
+                {
+                    anim.speed = speed / maxSpeed;
+                }
+                else
+                {
+                    anim.speed = -speed / maxSpeed;
+                }
+            }
+
             rig.velocity = transform.up * speed;
         }
         catch
         {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
 
     }

@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
             s.audioSource.clip = s.clip;
         }
 
-        PlaySound("Music");
+        PlaySound("MusicMenu");
     }
     public void SetVolumeFx(Slider slider)
     {

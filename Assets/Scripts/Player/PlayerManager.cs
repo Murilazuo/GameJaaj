@@ -16,11 +16,11 @@ public class PlayerManager : MonoBehaviour
     public bool canUpgrade = false;
     SoundManager soundManager;
     public static Action OnUpgrade;
-
     [SerializeField]int[] orbByLevel;
 
     DisplayLevel displayLevel;
 
+    Animator anim;
 
     private void Awake()
     {
@@ -35,6 +35,7 @@ public class PlayerManager : MonoBehaviour
         life = maxLife;
         level = 0;
         displayLevel = FindObjectOfType<DisplayLevel>();
+        anim = GetComponent<Animator>();
     }
     internal void SetLife(float damage)
     {
@@ -73,6 +74,28 @@ public class PlayerManager : MonoBehaviour
     private void Upgrade()
     {
         level++;
+        print(level);
+        int levelId = 1;
+        switch (level)
+        {
+            case 3:
+            case 4:
+                levelId = 2;
+                break;
+            case 5:
+            case 6:
+                levelId = 2;
+                break;
+            case 7:
+            case 8:
+                levelId = 2;
+                break;
+            case 9:
+            case 10:
+                levelId = 2;
+                break;
+        }
+        anim.SetInteger("Level", levelId);
 
         if(level < orbByLevel.Length)
         {
@@ -87,7 +110,6 @@ public class PlayerManager : MonoBehaviour
         {
             nextUpgrade = pointsToNextUpgrade[level];
         }
-        print(nextUpgrade);
         OnUpgrade?.Invoke();
         canUpgrade = true;
         soundManager.PlaySound("Evolve");
